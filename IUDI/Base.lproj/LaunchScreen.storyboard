@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="OaV-Di-k3v">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Roboto-Regular.ttf">
+            <string>Roboto-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Vector" translatesAutoresizingMaskIntoConstraints="NO" id="7MK-Kz-lnv">
+                                <rect key="frame" x="89.666666666666686" y="30" width="600" height="600"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="600" id="fZ3-No-bDC"/>
+                                    <constraint firstAttribute="width" constant="600" id="iLg-yw-yUW"/>
+                                </constraints>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="f17-Fj-U9o">
+                                <rect key="frame" x="104.66666666666669" y="340" width="184" height="100"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="App Icone" translatesAutoresizingMaskIntoConstraints="NO" id="3BK-RV-a1x">
+                                        <rect key="frame" x="51.999999999999986" y="10" width="80.000000000000014" height="80"/>
+                                        <color key="tintColor" systemColor="tintColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="3BK-RV-a1x" secondAttribute="height" multiplier="1:1" id="3CK-lk-4J9"/>
+                                            <constraint firstAttribute="width" constant="80" id="8Q4-5d-230"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="3BK-RV-a1x" firstAttribute="centerX" secondItem="f17-Fj-U9o" secondAttribute="centerX" id="Edm-iZ-bCp"/>
+                                    <constraint firstAttribute="width" constant="184" id="Qkl-1C-aSx"/>
+                                    <constraint firstItem="3BK-RV-a1x" firstAttribute="top" secondItem="f17-Fj-U9o" secondAttribute="top" constant="10" id="gd7-4G-9eu"/>
+                                    <constraint firstAttribute="bottom" secondItem="3BK-RV-a1x" secondAttribute="bottom" constant="10" id="zT6-gk-vIX"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hi Ola Tìm Quanh Đây" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TP5-qD-466">
+                                <rect key="frame" x="90.000000000000014" y="440" width="213.33333333333337" height="26"/>
+                                <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="22"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" name="MainColor"/>
+                        <constraints>
+                            <constraint firstItem="7MK-Kz-lnv" firstAttribute="bottom" secondItem="f17-Fj-U9o" secondAttribute="bottom" constant="190" id="0mx-o7-eeB"/>
+                            <constraint firstItem="TP5-qD-466" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="4ca-3p-lot"/>
+                            <constraint firstItem="f17-Fj-U9o" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" constant="340" id="8f3-jB-HUT"/>
+                            <constraint firstItem="7MK-Kz-lnv" firstAttribute="leading" secondItem="f17-Fj-U9o" secondAttribute="leading" constant="-15" id="AbB-NR-C8g"/>
+                            <constraint firstItem="f17-Fj-U9o" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="DN5-QO-x7L"/>
+                            <constraint firstItem="TP5-qD-466" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="NDN-Qp-NKb"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="TP5-qD-466" secondAttribute="trailing" id="ZIA-Eh-IHi"/>
+                            <constraint firstItem="TP5-qD-466" firstAttribute="top" secondItem="f17-Fj-U9o" secondAttribute="bottom" id="nfK-yv-qWr"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="53" y="375"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Vxh-Bk-6VS">
+            <objects>
+                <viewController id="OaV-Di-k3v" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="LSd-uS-4CY">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="chat" translatesAutoresizingMaskIntoConstraints="NO" id="YoS-bh-PTu">
+                                <rect key="frame" x="117" y="163" width="140" height="140"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="Bot" translatesAutoresizingMaskIntoConstraints="NO" id="KDh-fX-hUe">
+                                <rect key="frame" x="89" y="410" width="40" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="AI L VE" translatesAutoresizingMaskIntoConstraints="NO" id="Ty0-de-mOZ">
+                                <rect key="frame" x="134" y="406" width="148" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="Vector-10" translatesAutoresizingMaskIntoConstraints="NO" id="1Gl-rU-rMc">
+                                <rect key="frame" x="198" y="416" width="33" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="Kết nối yêu thương" translatesAutoresizingMaskIntoConstraints="NO" id="6BO-jR-alg">
+                                <rect key="frame" x="88" y="454" width="198" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="m1s-Rn-Ige"/>
+                        <color key="backgroundColor" red="0.35686278339999999" green="0.76862752440000004" blue="0.35686278339999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Igw-nu-yrk" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="888" y="375"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="AI L VE" width="147" height="29"/>
+        <image name="App Icone" width="330" height="330"/>
+        <image name="Bot" width="40" height="40"/>
+        <image name="Kết nối yêu thương" width="197" height="25"/>
+        <image name="Vector" width="600" height="600"/>
+        <image name="Vector-10" width="33" height="29"/>
+        <image name="chat" width="140" height="140"/>
+        <namedColor name="MainColor">
+            <color red="0.078431372549019607" green="0.56862745098039214" blue="0.3411764705882353" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="tintColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

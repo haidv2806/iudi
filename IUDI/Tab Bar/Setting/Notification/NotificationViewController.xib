@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="NotificationViewController" customModule="IUDI" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="Ki0-fb-uL5" id="IhF-3q-ilR"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="Ki0-fb-uL5">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="kUq-2X-N0p">
+                    <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lFr-1L-RIO">
+                    <rect key="frame" x="0.0" y="0.0" width="393" height="181"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="Ellipse 116" translatesAutoresizingMaskIntoConstraints="NO" id="ssc-ag-BUS" userLabel="dot 1">
+                            <rect key="frame" x="285" y="62" width="29" height="39"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="Union" translatesAutoresizingMaskIntoConstraints="NO" id="vY2-7p-9A7">
+                            <rect key="frame" x="235" y="0.0" width="158" height="175"/>
+                        </imageView>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="Ellipse 116" translatesAutoresizingMaskIntoConstraints="NO" id="sD6-qo-1QB" userLabel="dot 2">
+                            <rect key="frame" x="320" y="62" width="29" height="39"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="Ellipse 116" translatesAutoresizingMaskIntoConstraints="NO" id="wHB-j1-yIl" userLabel="dot 3">
+                            <rect key="frame" x="355" y="62" width="29" height="39"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" image="Rectangle 102" translatesAutoresizingMaskIntoConstraints="NO" id="f1n-fa-sNq">
+                            <rect key="frame" x="0.0" y="0.0" width="393" height="98"/>
+                        </imageView>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="Vector 3" translatesAutoresizingMaskIntoConstraints="NO" id="rJc-UX-bOH">
+                            <rect key="frame" x="25" y="54" width="19" height="34"/>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Thông Báo" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f4f-5S-AfB">
+                            <rect key="frame" x="0.0" y="60" width="393" height="28"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="rJc-UX-bOH" firstAttribute="leading" secondItem="lFr-1L-RIO" secondAttribute="leading" constant="25" id="B2k-cb-ldR"/>
+                        <constraint firstAttribute="trailing" secondItem="f4f-5S-AfB" secondAttribute="trailing" id="JJc-kM-v01"/>
+                        <constraint firstItem="f1n-fa-sNq" firstAttribute="leading" secondItem="lFr-1L-RIO" secondAttribute="leading" id="JUI-Re-4ge"/>
+                        <constraint firstAttribute="trailing" secondItem="f1n-fa-sNq" secondAttribute="trailing" id="PA8-Uo-oHf"/>
+                        <constraint firstItem="f4f-5S-AfB" firstAttribute="leading" secondItem="lFr-1L-RIO" secondAttribute="leading" id="R0a-Ai-Lce"/>
+                        <constraint firstItem="f4f-5S-AfB" firstAttribute="bottom" secondItem="rJc-UX-bOH" secondAttribute="bottom" id="ees-BY-VBb"/>
+                        <constraint firstItem="f4f-5S-AfB" firstAttribute="top" secondItem="lFr-1L-RIO" secondAttribute="top" constant="60" id="gRc-x6-bkx"/>
+                        <constraint firstItem="vY2-7p-9A7" firstAttribute="top" secondItem="f1n-fa-sNq" secondAttribute="top" id="gnJ-4q-Tdc"/>
+                        <constraint firstItem="f4f-5S-AfB" firstAttribute="trailing" secondItem="vY2-7p-9A7" secondAttribute="trailing" id="qBR-F5-HJK"/>
+                        <constraint firstItem="f1n-fa-sNq" firstAttribute="top" secondItem="lFr-1L-RIO" secondAttribute="top" id="x73-TH-Rb2"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="Vgr-qK-hkj"/>
+            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="kUq-2X-N0p" firstAttribute="top" secondItem="Ki0-fb-uL5" secondAttribute="top" id="7uW-2j-ZJd"/>
+                <constraint firstItem="Vgr-qK-hkj" firstAttribute="trailing" secondItem="kUq-2X-N0p" secondAttribute="trailing" id="AuY-5K-GZq"/>
+                <constraint firstItem="lFr-1L-RIO" firstAttribute="leading" secondItem="Vgr-qK-hkj" secondAttribute="leading" id="Rno-lB-Vly"/>
+                <constraint firstItem="Vgr-qK-hkj" firstAttribute="bottom" secondItem="lFr-1L-RIO" secondAttribute="bottom" constant="637" id="S95-eM-cUx"/>
+                <constraint firstItem="lFr-1L-RIO" firstAttribute="top" secondItem="kUq-2X-N0p" secondAttribute="top" id="haG-lO-FqU"/>
+                <constraint firstAttribute="bottom" secondItem="kUq-2X-N0p" secondAttribute="bottom" id="kj7-1A-O8F"/>
+                <constraint firstAttribute="trailing" secondItem="lFr-1L-RIO" secondAttribute="trailing" id="oFM-SN-Dsb"/>
+                <constraint firstItem="kUq-2X-N0p" firstAttribute="leading" secondItem="Vgr-qK-hkj" secondAttribute="leading" id="p9I-lP-f9X"/>
+            </constraints>
+            <point key="canvasLocation" x="-120" y="-626"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Ellipse 116" width="29" height="30"/>
+        <image name="Rectangle 102" width="375" height="98"/>
+        <image name="Union" width="158" height="175"/>
+        <image name="Vector 3" width="19" height="34"/>
+        <image name="background" width="375" height="916"/>
+    </resources>
+</document>

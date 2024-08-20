@@ -1,0 +1,80 @@
+PODS:
+  - Alamofire (5.8.0)
+  - CardSlider (0.1.0)
+  - CollectionViewPagingLayout (1.1.0)
+  - DropDown (2.3.13)
+  - InputBarAccessoryView (5.5.0):
+    - InputBarAccessoryView/Core (= 5.5.0)
+  - InputBarAccessoryView/Core (5.5.0)
+  - iOSDropDown (0.4.0)
+  - KeychainSwift (24.0.0)
+  - Kingfisher (7.11.0)
+  - MBProgressHUD (1.2.0)
+  - MessageKit (3.8.0):
+    - InputBarAccessoryView (~> 5.5.0)
+  - ReadMoreTextView (3.0.1)
+  - Socket.IO-Client-Swift (16.1.0):
+    - Starscream (~> 4.0.6)
+  - SQLite.swift (0.14.1):
+    - SQLite.swift/standard (= 0.14.1)
+  - SQLite.swift/standard (0.14.1)
+  - Starscream (4.0.8)
+  - SwiftRangeSlider (2.0.0)
+  - SwiftyJSON (4.3.0)
+
+DEPENDENCIES:
+  - Alamofire (= 5.8.0)
+  - CardSlider
+  - CollectionViewPagingLayout
+  - DropDown
+  - iOSDropDown
+  - KeychainSwift
+  - Kingfisher (~> 7.11.0)
+  - MBProgressHUD (~> 1.2.0)
+  - MessageKit (~> 3.8.0)
+  - ReadMoreTextView
+  - Socket.IO-Client-Swift (~> 16.1.0)
+  - SQLite.swift (~> 0.14.0)
+  - SwiftRangeSlider
+  - SwiftyJSON (~> 4.0)
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - CardSlider
+    - CollectionViewPagingLayout
+    - DropDown
+    - InputBarAccessoryView
+    - iOSDropDown
+    - KeychainSwift
+    - Kingfisher
+    - MBProgressHUD
+    - MessageKit
+    - ReadMoreTextView
+    - Socket.IO-Client-Swift
+    - SQLite.swift
+    - Starscream
+    - SwiftRangeSlider
+    - SwiftyJSON
+
+SPEC CHECKSUMS:
+  Alamofire: 0e92e751b3e9e66d7982db43919d01f313b8eb91
+  CardSlider: 0a8f5f17f5a76701771794b07fdaeddc512358c8
+  CollectionViewPagingLayout: 2f8d50683bae57ca88f47fa4ab0195c9079582cf
+  DropDown: 8a2116376c1981888557f72ec2ffc9a5e0e456ec
+  InputBarAccessoryView: 1d7b0a672b36e370f01f264b3907ef39d03328e3
+  iOSDropDown: ce9daa584eaa5567cafc1b633e3cc7eb6d9cea42
+  KeychainSwift: 007c4647486e4563adca839cf02cef00deb3b670
+  Kingfisher: b9c985d864d43515f404f1ef4a8ce7d802ace3ac
+  MBProgressHUD: 3ee5efcc380f6a79a7cc9b363dd669c5e1ae7406
+  MessageKit: a1ba0c69ebead94029867853eb44dd05b9b3f453
+  ReadMoreTextView: 19147adf93abce6d7271e14031a00303fe28720d
+  Socket.IO-Client-Swift: ee4b8f80a3db18dd7f32b266ddf273310609443c
+  SQLite.swift: 2992550ebf3c5b268bf4352603e3df87d2a4ed72
+  Starscream: 19b5533ddb925208db698f0ac508a100b884a1b9
+  SwiftRangeSlider: f86e3b637c961120158fa1a89277c8343845cbe4
+  SwiftyJSON: 6faa0040f8b59dead0ee07436cbf76b73c08fd08
+
+PODFILE CHECKSUM: 8b7053ae3ea802cfb426da2a0f5d975d50764322
+
+COCOAPODS: 1.15.2

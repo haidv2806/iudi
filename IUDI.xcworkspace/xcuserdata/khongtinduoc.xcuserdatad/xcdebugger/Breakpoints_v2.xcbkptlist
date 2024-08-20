@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "C45B0F2F-827F-4F62-B231-8A6411D48E84"
+   type = "0"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "8423D999-FF57-4501-9833-21FA3DB41AD2"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "IUDI/NetWork/APIService.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "68"
+            endingLineNumber = "68"
+            landmarkName = "apiHandle(method:subUrl:parameters:data:completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "A6D2D342-9007-42DC-B4D0-235682C25298"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "IUDI/NetWork/APIService.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "35"
+            endingLineNumber = "35"
+            landmarkName = "apiHandleGetRequest(subUrl:data:completion:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "A6D2D342-9007-42DC-B4D0-235682C25298 - c69a32a5afc91963"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Alamofire.DataResponse&lt;&#x3c4;_0_0, Alamofire.AFError&gt;) -&gt; () in IUDI.APIService.apiHandleGetRequest&lt;&#x3c4;_0_0 where &#x3c4;_0_0: Swift.Decodable&gt;(subUrl: Swift.String, data: &#x3c4;_0_0.Type, completion: (Swift.Result&lt;&#x3c4;_0_0, IUDI.APIError&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "IUDI"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/khongtinduoc/Documents/iudi_IOS/IUDI/NetWork/APIService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "35"
+                  endingLineNumber = "35"
+                  offsetFromSymbolStart = "2532">
+               </Location>
+               <Location
+                  uuid = "A6D2D342-9007-42DC-B4D0-235682C25298 - c69a32a5afc91963"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Alamofire.DataResponse&lt;&#x3c4;_0_0, Alamofire.AFError&gt;) -&gt; () in IUDI.APIService.apiHandleGetRequest&lt;&#x3c4;_0_0 where &#x3c4;_0_0: Swift.Decodable&gt;(subUrl: Swift.String, data: &#x3c4;_0_0.Type, completion: (Swift.Result&lt;&#x3c4;_0_0, IUDI.APIError&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "IUDI"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/khongtinduoc/Documents/iudi_IOS/IUDI/NetWork/APIService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "35"
+                  endingLineNumber = "35"
+                  offsetFromSymbolStart = "2688">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "C8ABBF74-A166-4148-A1F9-130A00D05EDC"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "IUDI/Profile Screen/SelectImageViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "80"
+            endingLineNumber = "80"
+            landmarkName = "getAllImage()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "C8ABBF74-A166-4148-A1F9-130A00D05EDC - 4897d9a41ccfcaf6"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Alamofire.DataResponse&lt;IUDI.GetPhotos, Alamofire.AFError&gt;) -&gt; () in IUDI.SelectImageViewController.getAllImage() -&gt; ()"
+                  moduleName = "IUDI"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/khongtinduoc/Documents/iudi_IOS/IUDI/Profile%20Screen/SelectImageViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "80"
+                  endingLineNumber = "80"
+                  offsetFromSymbolStart = "2816">
+               </Location>
+               <Location
+                  uuid = "C8ABBF74-A166-4148-A1F9-130A00D05EDC - 4897d9a41ccfcaf6"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Alamofire.DataResponse&lt;IUDI.GetPhotos, Alamofire.AFError&gt;) -&gt; () in IUDI.SelectImageViewController.getAllImage() -&gt; ()"
+                  moduleName = "IUDI"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/khongtinduoc/Documents/iudi_IOS/IUDI/Profile%20Screen/SelectImageViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "80"
+                  endingLineNumber = "80"
+                  offsetFromSymbolStart = "2916">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "B1A7C2EB-F417-474B-B0F6-6BDDC34FC254"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "IUDI/Extension/Base64ImageHandle.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "28"
+            endingLineNumber = "28"
+            landmarkName = "convertStringToImage(imageString:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

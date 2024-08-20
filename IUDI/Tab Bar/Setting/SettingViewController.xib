@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SettingViewController" customModule="IUDI" customModuleProvider="target">
+            <connections>
+                <outlet property="IntroduceAboutUsButton" destination="f0F-ox-yfQ" id="6Ps-wk-dRH"/>
+                <outlet property="groupButton" destination="KAf-RO-Wnh" id="JVE-zz-Y0B"/>
+                <outlet property="logoutButton" destination="3PC-ve-zWZ" id="6ZA-th-a0h"/>
+                <outlet property="notificationButton" destination="Vrd-rW-cra" id="NHU-O9-fj3"/>
+                <outlet property="privacyButton" destination="Lf4-U5-gl3" id="94y-G5-fNu"/>
+                <outlet property="privacyPolicyButton" destination="GSr-Zn-5kg" id="8V8-N4-10k"/>
+                <outlet property="privacyTermsButton" destination="dHA-5t-Ytu" id="3Pg-XJ-06s"/>
+                <outlet property="scrollViewHeight" destination="Sfj-S5-RRg" id="3yM-ym-r6I"/>
+                <outlet property="userAvatar" destination="q6j-0c-aV6" id="xxY-Ox-HG9"/>
+                <outlet property="userAvatarHeight" destination="Je2-Zq-z05" id="SHP-VN-SWb"/>
+                <outlet property="userEmail" destination="Oen-TH-MV9" id="ZCz-yn-hap"/>
+                <outlet property="userFullName" destination="LVb-49-aKl" id="1dC-SD-MwL"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k6I-4r-xmm">
+                    <rect key="frame" x="0.0" y="59" width="393" height="793"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eAQ-i3-TcS">
+                            <rect key="frame" x="0.0" y="0.0" width="393" height="1500"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cài đặt" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gBB-ae-wXD">
+                                    <rect key="frame" x="20" y="0.0" width="373" height="28.666666666666668"/>
+                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="24"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="anh1" translatesAutoresizingMaskIntoConstraints="NO" id="q6j-0c-aV6">
+                                    <rect key="frame" x="96.666666666666686" y="58.666666666666686" width="200" height="200"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="200" id="Je2-Zq-z05"/>
+                                        <constraint firstAttribute="width" secondItem="q6j-0c-aV6" secondAttribute="height" id="XT5-Ca-vme"/>
+                                    </constraints>
+                                </imageView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Vũ Thanh Hiền" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LVb-49-aKl">
+                                    <rect key="frame" x="129.66666666666669" y="263.66666666666669" width="133.66666666666669" height="24"/>
+                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="vuthanhhien@gmail.com" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Oen-TH-MV9">
+                                    <rect key="frame" x="105.00000000000001" y="294.66666666666669" width="183.33333333333337" height="20.333333333333314"/>
+                                    <fontDescription key="fontDescription" type="system" weight="thin" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="941-Uk-R8O">
+                                    <rect key="frame" x="25" y="345" width="343" height="373"/>
+                                    <subviews>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KAf-RO-Wnh">
+                                            <rect key="frame" x="0.0" y="0.0" width="343" height="35"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="35" id="U3H-HX-MrP"/>
+                                            </constraints>
+                                            <state key="normal" title="Button"/>
+                                            <buttonConfiguration key="configuration" style="plain" image="person.2.fill" catalog="system" title="Nhóm">
+                                                <color key="baseForegroundColor" systemColor="labelColor"/>
+                                            </buttonConfiguration>
+                                            <connections>
+                                                <action selector="btnHandle:" destination="-1" eventType="touchUpInside" id="ztp-VR-VPP"/>
+                                            </connections>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lf4-U5-gl3">
+                                            <rect key="frame" x="0.0" y="55" width="343" height="35"/>
+                                            <state key="normal" title="Button"/>
+                                            <buttonConfiguration key="configuration" style="plain" image="lock.fill" catalog="system" title="Quyền riêng tư">
+                                                <color key="baseForegroundColor" systemColor="labelColor"/>
+                                            </buttonConfiguration>
+                                            <connections>
+                                                <action selector="btnHandle:" destination="-1" eventType="touchUpInside" id="C8k-yp-ppe"/>
+                                            </connections>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vrd-rW-cra">
+                                            <rect key="frame" x="0.0" y="110" width="343" height="35"/>
+                                            <state key="normal" title="Button"/>
+                                            <buttonConfiguration key="configuration" style="plain" image="bell.fill" catalog="system" title="Thông báo">
+                                                <color key="baseForegroundColor" systemColor="labelColor"/>
+                                            </buttonConfiguration>
+                                            <connections>
+                                                <action selector="btnHandle:" destination="-1" eventType="touchUpInside" id="sAW-mY-6eI"/>
+                                            </connections>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dHA-5t-Ytu">
+                                            <rect key="frame" x="0.0" y="165" width="343" height="35"/>
+                                            <state key="normal" title="Button"/>
+                                            <buttonConfiguration key="configuration" style="plain" image="doc.plaintext.fill" catalog="system" title="Điều khoản và Điều kiện">
+                                                <color key="baseForegroundColor" systemColor="labelColor"/>
+                                            </buttonConfiguration>
+                                            <connections>
+                                                <action selector="btnHandle:" destination="-1" eventType="touchUpInside" id="U31-EM-6pa"/>
+                                            </connections>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GSr-Zn-5kg">
+                                            <rect key="frame" x="0.0" y="220" width="343" height="35"/>
+                                            <state key="normal" title="Button"/>
+                                            <buttonConfiguration key="configuration" style="plain" image="lock.shield.fill" catalog="system" title="Chính sách bảo mật">
+                                                <color key="baseForegroundColor" systemColor="labelColor"/>
+                                            </buttonConfiguration>
+                                            <connections>
+                                                <action selector="btnHandle:" destination="-1" eventType="touchUpInside" id="4aR-xb-xnd"/>
+                                            </connections>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f0F-ox-yfQ">
+                                            <rect key="frame" x="0.0" y="275" width="343" height="35"/>
+                                            <state key="normal" title="Button"/>
+                                            <buttonConfiguration key="configuration" style="plain" image="info.bubble.fill.rtl" catalog="system" title="Giới thiệu về chúng tôi">
+                                                <color key="baseForegroundColor" systemColor="labelColor"/>
+                                            </buttonConfiguration>
+                                            <connections>
+                                                <action selector="btnHandle:" destination="-1" eventType="touchUpInside" id="zvl-pT-QwO"/>
+                                            </connections>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3PC-ve-zWZ">
+                                            <rect key="frame" x="0.0" y="330" width="343" height="43"/>
+                                            <color key="backgroundColor" red="0.0" green="0.52941176469999995" blue="0.28235294119999998" alpha="1" colorSpace="calibratedRGB"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="43" id="1sM-0P-nh2"/>
+                                                <constraint firstAttribute="width" constant="343" id="vzo-0t-moC"/>
+                                            </constraints>
+                                            <state key="normal" title="Button"/>
+                                            <buttonConfiguration key="configuration" style="plain" title="Log out">
+                                                <color key="baseForegroundColor" name="Background Color"/>
+                                            </buttonConfiguration>
+                                            <connections>
+                                                <action selector="btnHandle:" destination="-1" eventType="touchUpInside" id="CKQ-z8-h5V"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="f0F-ox-yfQ" firstAttribute="height" secondItem="KAf-RO-Wnh" secondAttribute="height" id="3NX-SI-vQP"/>
+                                        <constraint firstItem="Lf4-U5-gl3" firstAttribute="height" secondItem="KAf-RO-Wnh" secondAttribute="height" id="Edk-Rb-iL3"/>
+                                        <constraint firstItem="Vrd-rW-cra" firstAttribute="height" secondItem="KAf-RO-Wnh" secondAttribute="height" id="j4Y-Q8-8uN"/>
+                                        <constraint firstItem="dHA-5t-Ytu" firstAttribute="height" secondItem="KAf-RO-Wnh" secondAttribute="height" id="l1M-V9-2mA"/>
+                                        <constraint firstItem="GSr-Zn-5kg" firstAttribute="height" secondItem="KAf-RO-Wnh" secondAttribute="height" id="lNU-H6-zcn"/>
+                                    </constraints>
+                                </stackView>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstAttribute="trailing" secondItem="gBB-ae-wXD" secondAttribute="trailing" id="8K8-ZE-bfu"/>
+                                <constraint firstItem="941-Uk-R8O" firstAttribute="centerX" secondItem="eAQ-i3-TcS" secondAttribute="centerX" id="8Kb-rD-kzJ"/>
+                                <constraint firstItem="gBB-ae-wXD" firstAttribute="top" secondItem="eAQ-i3-TcS" secondAttribute="top" id="9fD-NT-YzI"/>
+                                <constraint firstItem="941-Uk-R8O" firstAttribute="top" secondItem="Oen-TH-MV9" secondAttribute="bottom" constant="30" id="CaR-Sz-gss"/>
+                                <constraint firstItem="LVb-49-aKl" firstAttribute="centerX" secondItem="q6j-0c-aV6" secondAttribute="centerX" id="MtU-Wu-zKG"/>
+                                <constraint firstItem="Oen-TH-MV9" firstAttribute="top" secondItem="LVb-49-aKl" secondAttribute="bottom" constant="7" id="Oeb-wq-iDP"/>
+                                <constraint firstItem="gBB-ae-wXD" firstAttribute="leading" secondItem="eAQ-i3-TcS" secondAttribute="leading" constant="20" id="Ows-kQ-ejW"/>
+                                <constraint firstItem="q6j-0c-aV6" firstAttribute="centerX" secondItem="eAQ-i3-TcS" secondAttribute="centerX" id="QUb-hr-IqL"/>
+                                <constraint firstAttribute="height" constant="1500" id="Sfj-S5-RRg"/>
+                                <constraint firstItem="q6j-0c-aV6" firstAttribute="top" secondItem="gBB-ae-wXD" secondAttribute="bottom" constant="30" id="Sgn-ni-0jK"/>
+                                <constraint firstItem="LVb-49-aKl" firstAttribute="top" secondItem="q6j-0c-aV6" secondAttribute="bottom" constant="5" id="l3X-by-T7D"/>
+                                <constraint firstItem="Oen-TH-MV9" firstAttribute="centerX" secondItem="LVb-49-aKl" secondAttribute="centerX" id="voT-Lr-e96"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="eAQ-i3-TcS" firstAttribute="leading" secondItem="k6I-4r-xmm" secondAttribute="leading" id="6Dg-oU-SnX"/>
+                        <constraint firstItem="eAQ-i3-TcS" firstAttribute="trailing" secondItem="dlb-FV-zQc" secondAttribute="trailing" id="6VC-4K-5i3"/>
+                        <constraint firstItem="eAQ-i3-TcS" firstAttribute="top" secondItem="dlb-FV-zQc" secondAttribute="top" id="97H-ai-cwT"/>
+                        <constraint firstItem="eAQ-i3-TcS" firstAttribute="leading" secondItem="dlb-FV-zQc" secondAttribute="leading" id="BEC-hc-KfU"/>
+                        <constraint firstItem="eAQ-i3-TcS" firstAttribute="width" secondItem="qFZ-6S-l4T" secondAttribute="width" id="fTW-3z-Gun"/>
+                        <constraint firstItem="eAQ-i3-TcS" firstAttribute="bottom" secondItem="dlb-FV-zQc" secondAttribute="bottom" id="fjT-1c-3GC"/>
+                    </constraints>
+                    <viewLayoutGuide key="contentLayoutGuide" id="dlb-FV-zQc"/>
+                    <viewLayoutGuide key="frameLayoutGuide" id="qFZ-6S-l4T"/>
+                </scrollView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="k6I-4r-xmm" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="2On-39-ESU"/>
+                <constraint firstItem="k6I-4r-xmm" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="AoR-Xh-eW8"/>
+                <constraint firstAttribute="bottom" secondItem="k6I-4r-xmm" secondAttribute="bottom" id="Wby-P2-QTP"/>
+                <constraint firstAttribute="trailing" secondItem="k6I-4r-xmm" secondAttribute="trailing" id="n6g-4Z-ogk"/>
+            </constraints>
+            <point key="canvasLocation" x="85" y="20"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="anh1" width="328" height="385"/>
+        <image name="bell.fill" catalog="system" width="123" height="128"/>
+        <image name="doc.plaintext.fill" catalog="system" width="115" height="128"/>
+        <image name="info.bubble.fill.rtl" catalog="system" width="128" height="110"/>
+        <image name="lock.fill" catalog="system" width="125" height="128"/>
+        <image name="lock.shield.fill" catalog="system" width="128" height="119"/>
+        <image name="person.2.fill" catalog="system" width="128" height="86"/>
+        <namedColor name="Background Color">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

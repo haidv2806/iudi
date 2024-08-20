@@ -1,0 +1,429 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "8F576F38-10EF-4BC6-8388-0B054C0F78A9"
+   type = "0"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "24F248A2-AE80-4B2E-AB6D-76987EF9F5AE"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "IUDI/NetWork/GetPhotos.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "11"
+            endingLineNumber = "11"
+            landmarkName = "GetPhotos"
+            landmarkType = "14">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "D986842D-929E-4286-A90F-B11FA1ECAE7F"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "IUDI/NetWork/SocketIOManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "11"
+            endingLineNumber = "11"
+            landmarkName = "SocketIOManager"
+            landmarkType = "3">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "D9C3BE78-9EC4-4B41-A80E-E15EA2EA9C10"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "IUDI/NetWork/SocketIOManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "44"
+            endingLineNumber = "44"
+            landmarkName = "sendTextMessage(messageData:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "0A158E2E-7539-4DA5-A870-5335EA43F96D"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "IUDI/CoreData/FilterUserCoreData.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "12"
+            endingLineNumber = "12"
+            landmarkName = "FilterUserCoreData"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "0A158E2E-7539-4DA5-A870-5335EA43F96D - 8313c5e50f10af27"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "IUDI.FilterUserCoreData.deinit"
+                  moduleName = "IUDI"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/dovanhai/iudi-ios-swift-6-aug-2024%202/IUDI/CoreData/FilterUserCoreData.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "20">
+               </Location>
+               <Location
+                  uuid = "0A158E2E-7539-4DA5-A870-5335EA43F96D - c88aecfd3c92b330"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "IUDI.FilterUserCoreData.__deallocating_deinit"
+                  moduleName = "IUDI"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/dovanhai/iudi-ios-swift-6-aug-2024%202/IUDI/CoreData/FilterUserCoreData.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "16">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "E1177541-D6AC-4C76-90B5-0BFE9FE54D99"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "IUDI/Profile Screen/ProfileViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "16"
+            endingLineNumber = "16"
+            landmarkName = "ProfileViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "E1177541-D6AC-4C76-90B5-0BFE9FE54D99 - 5465597176eeca7e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "IUDI.ProfileViewController.__allocating_init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; IUDI.ProfileViewController"
+                  moduleName = "IUDI"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/dovanhai/iudi-ios-swift-6-aug-2024%202/IUDI/Profile%20Screen/ProfileViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "28">
+               </Location>
+               <Location
+                  uuid = "E1177541-D6AC-4C76-90B5-0BFE9FE54D99 - ec20530e04d172a0"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "IUDI.ProfileViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; IUDI.ProfileViewController"
+                  moduleName = "IUDI"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/dovanhai/iudi-ios-swift-6-aug-2024%202/IUDI/Profile%20Screen/ProfileViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "18"
+                  endingLineNumber = "18"
+                  offsetFromSymbolStart = "336">
+               </Location>
+               <Location
+                  uuid = "E1177541-D6AC-4C76-90B5-0BFE9FE54D99 - 592e072e5f4867d1"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "IUDI.ProfileViewController.__allocating_init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;IUDI.ProfileViewController&gt;"
+                  moduleName = "IUDI"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/dovanhai/iudi-ios-swift-6-aug-2024%202/IUDI/Profile%20Screen/ProfileViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "20">
+               </Location>
+               <Location
+                  uuid = "E1177541-D6AC-4C76-90B5-0BFE9FE54D99 - 867a79ea93668539"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "IUDI.ProfileViewController.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;IUDI.ProfileViewController&gt;"
+                  moduleName = "IUDI"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/dovanhai/iudi-ios-swift-6-aug-2024%202/IUDI/Profile%20Screen/ProfileViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "18"
+                  endingLineNumber = "18"
+                  offsetFromSymbolStart = "312">
+               </Location>
+               <Location
+                  uuid = "E1177541-D6AC-4C76-90B5-0BFE9FE54D99 - c002957dbe9444f6"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "IUDI.ProfileViewController.__deallocating_deinit"
+                  moduleName = "IUDI"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/dovanhai/iudi-ios-swift-6-aug-2024%202/IUDI/Profile%20Screen/ProfileViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "16">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "2A06D827-E40E-4C5A-9AEF-3AED7D1E9642"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "IUDI/Profile Screen/ProfileViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "48"
+            endingLineNumber = "48"
+            landmarkName = "ProfileViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "2A06D827-E40E-4C5A-9AEF-3AED7D1E9642 - 6fbadea7ca77cdb4"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "IUDI.ProfileViewController.userProfile.getter : Swift.Optional&lt;IUDI.Users&gt;"
+                  moduleName = "IUDI"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/dovanhai/iudi-ios-swift-6-aug-2024%202/IUDI/Profile%20Screen/ProfileViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "40">
+               </Location>
+               <Location
+                  uuid = "2A06D827-E40E-4C5A-9AEF-3AED7D1E9642 - dbe1bfa5ba8585a8"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "IUDI.ProfileViewController.userProfile.setter : Swift.Optional&lt;IUDI.Users&gt;"
+                  moduleName = "IUDI"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/dovanhai/iudi-ios-swift-6-aug-2024%202/IUDI/Profile%20Screen/ProfileViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "44">
+               </Location>
+               <Location
+                  uuid = "2A06D827-E40E-4C5A-9AEF-3AED7D1E9642 - 172efe5273665c9"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "IUDI.ProfileViewController.userProfile.modify : Swift.Optional&lt;IUDI.Users&gt;"
+                  moduleName = "IUDI"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/dovanhai/iudi-ios-swift-6-aug-2024%202/IUDI/Profile%20Screen/ProfileViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "48"
+                  endingLineNumber = "48"
+                  offsetFromSymbolStart = "0">
+               </Location>
+               <Location
+                  uuid = "2A06D827-E40E-4C5A-9AEF-3AED7D1E9642 - acb36007e5550aed"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "IUDI.ProfileViewController.userProfile.modify : Swift.Optional&lt;IUDI.Users&gt; with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "IUDI"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/dovanhai/iudi-ios-swift-6-aug-2024%202/%3Ccompiler-generated%3E"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "16">
+               </Location>
+               <Location
+                  uuid = "2A06D827-E40E-4C5A-9AEF-3AED7D1E9642 - ec20530e04d17682"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "IUDI.ProfileViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; IUDI.ProfileViewController"
+                  moduleName = "IUDI"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/dovanhai/iudi-ios-swift-6-aug-2024%202/IUDI/Profile%20Screen/ProfileViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "48"
+                  endingLineNumber = "48"
+                  offsetFromSymbolStart = "1456">
+               </Location>
+               <Location
+                  uuid = "2A06D827-E40E-4C5A-9AEF-3AED7D1E9642 - 867a79ea9366811b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "IUDI.ProfileViewController.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;IUDI.ProfileViewController&gt;"
+                  moduleName = "IUDI"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/dovanhai/iudi-ios-swift-6-aug-2024%202/IUDI/Profile%20Screen/ProfileViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "48"
+                  endingLineNumber = "48"
+                  offsetFromSymbolStart = "1432">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "79DBAD19-1FD7-4A15-BBFE-8EB4748C1913"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "IUDI/Profile Screen/ProfileViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "49"
+            endingLineNumber = "49"
+            landmarkName = "ProfileViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "79DBAD19-1FD7-4A15-BBFE-8EB4748C1913 - 443a831842d52fb4"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "IUDI.ProfileViewController.userID.getter : Swift.Optional&lt;Swift.String&gt;"
+                  moduleName = "IUDI"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/dovanhai/iudi-ios-swift-6-aug-2024%202/IUDI/Profile%20Screen/ProfileViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "16">
+               </Location>
+               <Location
+                  uuid = "79DBAD19-1FD7-4A15-BBFE-8EB4748C1913 - 2f21fb9ff0b7dbfb"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "IUDI.ProfileViewController.userID.setter : Swift.Optional&lt;Swift.String&gt;"
+                  moduleName = "IUDI"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/dovanhai/iudi-ios-swift-6-aug-2024%202/IUDI/Profile%20Screen/ProfileViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "49"
+                  endingLineNumber = "49"
+                  offsetFromSymbolStart = "0">
+               </Location>
+               <Location
+                  uuid = "79DBAD19-1FD7-4A15-BBFE-8EB4748C1913 - a7648f560898c86a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "IUDI.ProfileViewController.userID.modify : Swift.Optional&lt;Swift.String&gt;"
+                  moduleName = "IUDI"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/dovanhai/iudi-ios-swift-6-aug-2024%202/IUDI/Profile%20Screen/ProfileViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "49"
+                  endingLineNumber = "49"
+                  offsetFromSymbolStart = "0">
+               </Location>
+               <Location
+                  uuid = "79DBAD19-1FD7-4A15-BBFE-8EB4748C1913 - 1ddb578b48394785"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "IUDI.ProfileViewController.userID.modify : Swift.Optional&lt;Swift.String&gt; with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "IUDI"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/dovanhai/iudi-ios-swift-6-aug-2024%202/%3Ccompiler-generated%3E"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "16">
+               </Location>
+               <Location
+                  uuid = "79DBAD19-1FD7-4A15-BBFE-8EB4748C1913 - ec20530e04d176a1"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "IUDI.ProfileViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; IUDI.ProfileViewController"
+                  moduleName = "IUDI"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/dovanhai/iudi-ios-swift-6-aug-2024%202/IUDI/Profile%20Screen/ProfileViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "49"
+                  endingLineNumber = "49"
+                  offsetFromSymbolStart = "1632">
+               </Location>
+               <Location
+                  uuid = "79DBAD19-1FD7-4A15-BBFE-8EB4748C1913 - 867a79ea93668138"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "IUDI.ProfileViewController.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;IUDI.ProfileViewController&gt;"
+                  moduleName = "IUDI"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/dovanhai/iudi-ios-swift-6-aug-2024%202/IUDI/Profile%20Screen/ProfileViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "49"
+                  endingLineNumber = "49"
+                  offsetFromSymbolStart = "1608">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "6BA6A536-FC68-4C87-B3CD-BA5A1118A834"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "IUDI/Profile Screen/ProfileViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "55"
+            endingLineNumber = "55"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

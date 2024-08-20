@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SettingViewController" customModule="IUDI" customModuleProvider="target">
+            <connections>
+                <outlet property="IntroduceAboutUsButton" destination="f0F-ox-yfQ" id="6Ps-wk-dRH"/>
+                <outlet property="groupButton" destination="KAf-RO-Wnh" id="JVE-zz-Y0B"/>
+                <outlet property="imageView" destination="q6j-0c-aV6" id="ItG-mn-xtl"/>
+                <outlet property="logoutButton" destination="3PC-ve-zWZ" id="6ZA-th-a0h"/>
+                <outlet property="notificationButton" destination="Vrd-rW-cra" id="NHU-O9-fj3"/>
+                <outlet property="privacyButton" destination="Lf4-U5-gl3" id="94y-G5-fNu"/>
+                <outlet property="privacyPolicyButton" destination="GSr-Zn-5kg" id="8V8-N4-10k"/>
+                <outlet property="privacyTermsButton" destination="dHA-5t-Ytu" id="3Pg-XJ-06s"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cài đặt" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gBB-ae-wXD">
+                    <rect key="frame" x="16" y="57.999999999999993" width="77.333333333333329" height="28.666666666666664"/>
+                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="24"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="anh1" translatesAutoresizingMaskIntoConstraints="NO" id="q6j-0c-aV6">
+                    <rect key="frame" x="127.66666666666667" y="116.66666666666667" width="137.66666666666663" height="137.66666666666663"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="q6j-0c-aV6" secondAttribute="height" id="XT5-Ca-vme"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Vũ Thanh Hiền" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LVb-49-aKl">
+                    <rect key="frame" x="129.66666666666669" y="259.33333333333331" width="133.66666666666669" height="24"/>
+                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="vuthanhhien@gmail.com" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Oen-TH-MV9">
+                    <rect key="frame" x="105.00000000000001" y="290.33333333333331" width="183.33333333333337" height="20.333333333333314"/>
+                    <fontDescription key="fontDescription" type="system" weight="thin" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="35" translatesAutoresizingMaskIntoConstraints="NO" id="941-Uk-R8O">
+                    <rect key="frame" x="25" y="344" width="343" height="459"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KAf-RO-Wnh">
+                            <rect key="frame" x="0.0" y="0.0" width="343" height="34.333333333333336"/>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="plain" image="person.2.fill" catalog="system" title="Nhóm">
+                                <color key="baseForegroundColor" systemColor="labelColor"/>
+                            </buttonConfiguration>
+                            <connections>
+                                <action selector="groupTapper:" destination="-1" eventType="touchUpInside" id="pzL-Zs-6Tb"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lf4-U5-gl3">
+                            <rect key="frame" x="0.0" y="69.333333333333314" width="343" height="34.333333333333343"/>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="plain" image="lock.fill" catalog="system" title="Quyền riêng tư">
+                                <color key="baseForegroundColor" systemColor="labelColor"/>
+                            </buttonConfiguration>
+                            <connections>
+                                <action selector="Privacy:" destination="-1" eventType="touchUpInside" id="R9X-rM-7KQ"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vrd-rW-cra">
+                            <rect key="frame" x="0.0" y="138.66666666666669" width="343" height="34.333333333333343"/>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="plain" image="bell.fill" catalog="system" title="Thông báo">
+                                <color key="baseForegroundColor" systemColor="labelColor"/>
+                            </buttonConfiguration>
+                            <connections>
+                                <action selector="Notification:" destination="-1" eventType="touchUpInside" id="dj8-fd-q97"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dHA-5t-Ytu">
+                            <rect key="frame" x="0.0" y="208" width="343" height="34.333333333333343"/>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="plain" image="doc.plaintext.fill" catalog="system" title="Điều khoản và Điều kiện">
+                                <color key="baseForegroundColor" systemColor="labelColor"/>
+                            </buttonConfiguration>
+                            <connections>
+                                <action selector="privacyTermsTapper:" destination="-1" eventType="touchUpInside" id="U0y-Cj-qw9"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GSr-Zn-5kg">
+                            <rect key="frame" x="0.0" y="277.33333333333337" width="343" height="34.333333333333314"/>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="plain" image="lock.shield.fill" catalog="system" title="Chính sách bảo mật">
+                                <color key="baseForegroundColor" systemColor="labelColor"/>
+                            </buttonConfiguration>
+                            <connections>
+                                <action selector="privacyPolicyTapper:" destination="-1" eventType="touchUpInside" id="cYL-Gc-68f"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f0F-ox-yfQ">
+                            <rect key="frame" x="0.0" y="346.66666666666663" width="343" height="34.333333333333314"/>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="plain" image="info.bubble.fill.rtl" catalog="system" title="Giới thiệu về chúng tôi">
+                                <color key="baseForegroundColor" systemColor="labelColor"/>
+                            </buttonConfiguration>
+                            <connections>
+                                <action selector="introduceAboutUsTapper:" destination="-1" eventType="touchUpInside" id="Hmv-tc-d6d"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3PC-ve-zWZ">
+                            <rect key="frame" x="0.0" y="416" width="343" height="43"/>
+                            <color key="backgroundColor" red="0.0" green="0.52941176469999995" blue="0.28235294119999998" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="43" id="1sM-0P-nh2"/>
+                                <constraint firstAttribute="width" constant="343" id="vzo-0t-moC"/>
+                            </constraints>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="plain" title="Log out">
+                                <color key="baseForegroundColor" name="Background Color"/>
+                            </buttonConfiguration>
+                        </button>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="941-Uk-R8O" secondAttribute="bottom" constant="15" id="2zD-Ih-5q0"/>
+                <constraint firstItem="q6j-0c-aV6" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="67C-i2-Eme"/>
+                <constraint firstItem="LVb-49-aKl" firstAttribute="centerX" secondItem="q6j-0c-aV6" secondAttribute="centerX" id="7pa-OK-ClJ"/>
+                <constraint firstItem="Oen-TH-MV9" firstAttribute="centerX" secondItem="LVb-49-aKl" secondAttribute="centerX" id="7xV-nc-y4w"/>
+                <constraint firstItem="q6j-0c-aV6" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" multiplier="0.35" id="C1a-fM-z7C"/>
+                <constraint firstItem="gBB-ae-wXD" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="16" id="CEE-H0-ByE"/>
+                <constraint firstItem="941-Uk-R8O" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="MK2-PG-g9K"/>
+                <constraint firstItem="Oen-TH-MV9" firstAttribute="top" secondItem="LVb-49-aKl" secondAttribute="bottom" constant="7" id="MkG-Hd-SJe"/>
+                <constraint firstItem="q6j-0c-aV6" firstAttribute="top" secondItem="gBB-ae-wXD" secondAttribute="bottom" constant="30" id="eWf-Aw-KhU"/>
+                <constraint firstItem="gBB-ae-wXD" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="58" id="qgL-Tu-YAm"/>
+                <constraint firstItem="LVb-49-aKl" firstAttribute="top" secondItem="q6j-0c-aV6" secondAttribute="bottom" constant="5" id="rXN-Kl-7jc"/>
+            </constraints>
+            <point key="canvasLocation" x="85" y="20"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="anh1" width="1000" height="1500"/>
+        <image name="bell.fill" catalog="system" width="123" height="128"/>
+        <image name="doc.plaintext.fill" catalog="system" width="115" height="128"/>
+        <image name="info.bubble.fill.rtl" catalog="system" width="128" height="110"/>
+        <image name="lock.fill" catalog="system" width="125" height="128"/>
+        <image name="lock.shield.fill" catalog="system" width="128" height="119"/>
+        <image name="person.2.fill" catalog="system" width="128" height="86"/>
+        <namedColor name="Background Color">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

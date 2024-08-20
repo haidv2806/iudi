@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BlockMessViewController" customModule="IUDI" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="H14-BK-oVD" id="OKV-Na-012"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="H14-BK-oVD">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="sR1-WH-kCp">
+                    <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hRn-2T-6N0">
+                    <rect key="frame" x="0.0" y="0.0" width="393" height="181"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="Ellipse 116" translatesAutoresizingMaskIntoConstraints="NO" id="Cfj-Xq-ZrT" userLabel="dot 1">
+                            <rect key="frame" x="285" y="62" width="29" height="39"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="Union" translatesAutoresizingMaskIntoConstraints="NO" id="YFk-uw-itE">
+                            <rect key="frame" x="235" y="0.0" width="158" height="175"/>
+                        </imageView>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="Ellipse 116" translatesAutoresizingMaskIntoConstraints="NO" id="90H-iN-l64" userLabel="dot 2">
+                            <rect key="frame" x="320" y="62" width="29" height="39"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="Ellipse 116" translatesAutoresizingMaskIntoConstraints="NO" id="JO8-2j-fw6" userLabel="dot 3">
+                            <rect key="frame" x="355" y="62" width="29" height="39"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" image="Rectangle 102" translatesAutoresizingMaskIntoConstraints="NO" id="JYi-s6-Ahf">
+                            <rect key="frame" x="0.0" y="0.0" width="393" height="98"/>
+                        </imageView>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="Vector 3" translatesAutoresizingMaskIntoConstraints="NO" id="nWZ-bs-agK">
+                            <rect key="frame" x="25" y="54" width="19" height="34"/>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Chặn Tin Nhắn" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aRo-Yp-RZN">
+                            <rect key="frame" x="0.0" y="60" width="393" height="28"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="YFk-uw-itE" firstAttribute="top" secondItem="JYi-s6-Ahf" secondAttribute="top" id="EZj-hI-OsM"/>
+                        <constraint firstItem="aRo-Yp-RZN" firstAttribute="top" secondItem="hRn-2T-6N0" secondAttribute="top" constant="60" id="JaT-Ok-aTB"/>
+                        <constraint firstItem="aRo-Yp-RZN" firstAttribute="leading" secondItem="hRn-2T-6N0" secondAttribute="leading" id="NU0-Fh-KmO"/>
+                        <constraint firstItem="JYi-s6-Ahf" firstAttribute="leading" secondItem="hRn-2T-6N0" secondAttribute="leading" id="NqQ-R4-MVI"/>
+                        <constraint firstItem="JYi-s6-Ahf" firstAttribute="top" secondItem="hRn-2T-6N0" secondAttribute="top" id="U1X-J3-vuk"/>
+                        <constraint firstItem="aRo-Yp-RZN" firstAttribute="bottom" secondItem="nWZ-bs-agK" secondAttribute="bottom" id="bSr-py-1Ge"/>
+                        <constraint firstItem="nWZ-bs-agK" firstAttribute="leading" secondItem="hRn-2T-6N0" secondAttribute="leading" constant="25" id="bVM-mv-9oq"/>
+                        <constraint firstAttribute="trailing" secondItem="aRo-Yp-RZN" secondAttribute="trailing" id="mhH-tE-v3f"/>
+                        <constraint firstItem="aRo-Yp-RZN" firstAttribute="trailing" secondItem="YFk-uw-itE" secondAttribute="trailing" id="qRc-0B-aiw"/>
+                        <constraint firstAttribute="trailing" secondItem="JYi-s6-Ahf" secondAttribute="trailing" id="sE7-Np-q67"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Những người này không thể gửi tin nhắn cho bạn" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="elH-vc-6Ae">
+                    <rect key="frame" x="22" y="107" width="314" height="17"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="YPg-th-jcf"/>
+            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="sR1-WH-kCp" firstAttribute="leading" secondItem="YPg-th-jcf" secondAttribute="leading" id="37n-Oa-UI4"/>
+                <constraint firstItem="elH-vc-6Ae" firstAttribute="top" secondItem="YPg-th-jcf" secondAttribute="top" constant="48" id="EIn-kR-qvw"/>
+                <constraint firstItem="YPg-th-jcf" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="elH-vc-6Ae" secondAttribute="trailing" symbolic="YES" id="Ikb-v9-Mrb"/>
+                <constraint firstItem="hRn-2T-6N0" firstAttribute="leading" secondItem="YPg-th-jcf" secondAttribute="leading" id="R7f-6F-B7X"/>
+                <constraint firstItem="YPg-th-jcf" firstAttribute="trailing" secondItem="sR1-WH-kCp" secondAttribute="trailing" id="bYe-D1-Rh8"/>
+                <constraint firstItem="sR1-WH-kCp" firstAttribute="top" secondItem="H14-BK-oVD" secondAttribute="top" id="c9P-fV-eki"/>
+                <constraint firstAttribute="bottom" secondItem="sR1-WH-kCp" secondAttribute="bottom" id="fr0-6Y-RFT"/>
+                <constraint firstAttribute="trailing" secondItem="hRn-2T-6N0" secondAttribute="trailing" id="gsI-OZ-ubU"/>
+                <constraint firstItem="elH-vc-6Ae" firstAttribute="leading" secondItem="YPg-th-jcf" secondAttribute="leading" constant="22" id="kNC-Bv-fgY"/>
+                <constraint firstItem="hRn-2T-6N0" firstAttribute="top" secondItem="sR1-WH-kCp" secondAttribute="top" id="v5Z-DI-9mW"/>
+                <constraint firstItem="YPg-th-jcf" firstAttribute="bottom" secondItem="hRn-2T-6N0" secondAttribute="bottom" constant="637" id="wnh-9d-xYj"/>
+            </constraints>
+            <point key="canvasLocation" x="-340" y="-626"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Ellipse 116" width="29" height="30"/>
+        <image name="Rectangle 102" width="375" height="98"/>
+        <image name="Union" width="158" height="175"/>
+        <image name="Vector 3" width="19" height="34"/>
+        <image name="background" width="375" height="916"/>
+    </resources>
+</document>
