@@ -141,6 +141,7 @@ extension FilterViewController {
             self.hideSubViewBtn.alpha = self.isMenuOpen ? 0.5 : 0
             self.subviewLocation.constant = self.isMenuOpen ? 0 : -550
             self.view.layoutIfNeeded()
+            
         })
         self.tabBarController?.tabBar.isHidden = self.isMenuOpen
     }
@@ -157,6 +158,51 @@ extension FilterViewController {
     }
     
 }
+//extension FilterViewController {
+//    
+//    private func displayMenu() {
+//        isMenuOpen.toggle()
+//        
+//        if isMenuOpen {
+//            // Khi menu được mở, khởi tạo FilterSettingUIViewController và thêm vào view
+//            let childVC = FilterSettingUIViewController()
+//            addChild(childVC)
+//            subView.addSubview(childVC.view)
+//            childVC.view.frame = subView.bounds
+//            childVC.didMove(toParent: self)
+//            childVC.delegate = self
+//            
+//            // Đảm bảo childVC.view ở trên cùng
+//            subView.bringSubviewToFront(childVC.view)
+//        } else {
+//            // Khi menu đóng, loại bỏ childVC.view
+//            if let childVC = children.first(where: { $0 is FilterSettingUIViewController }) {
+//                childVC.willMove(toParent: nil)
+//                childVC.view.removeFromSuperview()
+//                childVC.removeFromParent()
+//            }
+//        }
+//
+//        hideSubViewBtn.isHidden = !isMenuOpen
+//        UIView.animate(withDuration: 0.5, animations: {
+//            self.hideSubViewBtn.alpha = self.isMenuOpen ? 0.5 : 0
+//            self.subviewLocation.constant = self.isMenuOpen ? 0 : -550
+//            self.view.layoutIfNeeded()
+//        })
+//        self.tabBarController?.tabBar.isHidden = self.isMenuOpen
+//    }
+//    
+//    func subviewHandle(){
+//        let childVC = FilterSettingUIViewController()
+//        addChild(childVC)
+//        subView.addSubview(childVC.view)
+//        childVC.view.frame = subView.bounds
+//        childVC.didMove(toParent: self)
+//        childVC.delegate = self
+//        subviewLocation.constant = -550
+//        hideSubViewBtn.isHidden = true
+//    }
+//}
 // MARK: - CollectionView
 extension FilterViewController : UICollectionViewDataSource, UICollectionViewDelegate,CellSizeCaculate, UICollectionViewDelegateFlowLayout {
     
