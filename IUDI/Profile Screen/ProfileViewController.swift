@@ -19,11 +19,17 @@ class ProfileViewController: UIViewController,DateConvertFormat, ServerImageHand
     @IBOutlet weak var userNameLb: UILabel!
     @IBOutlet weak var userNameTF: UITextField!
     @IBOutlet weak var userEmailTF: UITextField!
+//    @IBOutlet weak var genderTF: DropDown!
+    
     @IBOutlet weak var genderTF: DropDown!
     @IBOutlet weak var dateOfBirthTF: UITextField!
     @IBOutlet weak var pickDateBtn: UIButton!
+//    @IBOutlet weak var birthAddressTF: DropDown!
     @IBOutlet weak var birthAddressTF: DropDown!
+    
+//    @IBOutlet weak var currentAddressTF: DropDown!
     @IBOutlet weak var currentAddressTF: DropDown!
+    
     @IBOutlet weak var phoneNumber: UITextField!
     @IBOutlet weak var userIntroduct: UITextView!
     @IBOutlet weak var userIntroductLb: UILabel!
@@ -100,14 +106,14 @@ class ProfileViewController: UIViewController,DateConvertFormat, ServerImageHand
     }
     
     func setupView(){
-        standardViewCornerRadius(uiView: userNameBoxView)
-        standardViewCornerRadius(uiView: userNameBoxView)
-        standardViewCornerRadius(uiView: userEmailBoxView)
-        standardViewCornerRadius(uiView: genderBoxView)
-        standardViewCornerRadius(uiView: dateOfBirthBoxView)
-        standardViewCornerRadius(uiView: birthAddressBoxView)
-        standardViewCornerRadius(uiView: currentAddressBoxView)
-        standardBtnCornerRadius(button: saveBtn)
+//        standardViewCornerRadius(uiView: userNameBoxView)
+//        standardViewCornerRadius(uiView: userNameBoxView)
+//        standardViewCornerRadius(uiView: userEmailBoxView)
+//        standardViewCornerRadius(uiView: genderBoxView)
+//        standardViewCornerRadius(uiView: dateOfBirthBoxView)
+//        standardViewCornerRadius(uiView: birthAddressBoxView)
+//        standardViewCornerRadius(uiView: currentAddressBoxView)
+//        standardBtnCornerRadius(button: saveBtn)
         standardViewCornerRadius(uiView: phoneNumberBoxView)
         standardViewCornerRadius(uiView: userIntroductBoxView)
         userAvatar.layer.cornerRadius = userAvatar.frame.width/2
