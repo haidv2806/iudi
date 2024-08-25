@@ -104,9 +104,9 @@ class UserIntroduceViewController: UIViewController,ServerImageHandle {
     }
     
     func setupUserIntroduct(){
-        backBtn.layer.cornerRadius = 10
-        backBtn.layer.borderColor = UIColor.black.cgColor
-        backBtn.layer.borderWidth = 1
+//        backBtn.layer.cornerRadius = 10
+//        backBtn.layer.borderColor = UIColor.black.cgColor
+//        backBtn.layer.borderWidth = 1
         backBtn.clipsToBounds = true
         userIntroduct.showsLargeContentViewer = true
         userIntroduct.shouldTrim = true
@@ -193,7 +193,7 @@ class UserIntroduceViewController: UIViewController,ServerImageHandle {
         userNameLb.text = dataUser?.fullName
 //        userNameLb.text = "\(data.userID)"
         userLocationLb.text = dataUser?.currentAdd
-        let mainText = NSAttributedString(string: dataUser?.bio ?? "", attributes: [NSAttributedString.Key.foregroundColor: UIColor.black])
+        let mainText = NSAttributedString(string: dataUser?.bio ?? "", attributes: [NSAttributedString.Key.foregroundColor: UIColor.white])
         //        userIntroduct.text = data.bio
         DispatchQueue.main.async {
             //            self.userIntroduct.text = data.bio
