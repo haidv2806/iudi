@@ -137,15 +137,12 @@ class SettingViewController: UIViewController, ServerImageHandle {
         case privacyTermsButton:
             let vc = AboutViewController()
             navigationController?.pushViewController(vc, animated: true)
-            vc.title = "Điều khoản bảo mật"
         case privacyPolicyButton:
             let vc = AboutViewController()
             navigationController?.pushViewController(vc, animated: true)
-            vc.title = "Chính sách bảo mật"
         case IntroduceAboutUsButton:
             let vc = AboutViewController()
             navigationController?.pushViewController(vc, animated: true)
-            vc.title = "Giới thiệu về chúng tôi"
         case logoutButton:
             logoutHandle()
         default:

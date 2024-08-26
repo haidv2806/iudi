@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -311,6 +311,7 @@
                                             <rect key="frame" x="3" y="80" width="140" height="120"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="120" id="CBo-Br-9z5"/>
+                                                <constraint firstAttribute="width" secondItem="mP6-9y-FBr" secondAttribute="height" constant="20" id="Jw0-Rb-pAI"/>
                                                 <constraint firstAttribute="width" secondItem="mP6-9y-FBr" secondAttribute="height" constant="20" id="TDo-vk-M51"/>
                                             </constraints>
                                         </imageView>
@@ -697,7 +698,6 @@
                                         <constraint firstItem="Qr0-Lv-Uhx" firstAttribute="leading" secondItem="1zH-dU-rfG" secondAttribute="leading" id="Cp0-nU-Bnp"/>
                                         <constraint firstItem="Au1-X3-Hbi" firstAttribute="trailing" secondItem="SKg-lE-eHK" secondAttribute="trailing" constant="40" id="G9Z-7x-8GQ"/>
                                         <constraint firstItem="2uP-gM-yeM" firstAttribute="centerX" secondItem="Au1-X3-Hbi" secondAttribute="centerX" id="ImC-va-i5M"/>
-                                        <constraint firstItem="mP6-9y-FBr" firstAttribute="width" secondItem="mP6-9y-FBr" secondAttribute="height" constant="20" id="Jw0-Rb-pAI"/>
                                         <constraint firstItem="Qr0-Lv-Uhx" firstAttribute="top" secondItem="mP6-9y-FBr" secondAttribute="bottom" id="NII-Df-5Vp"/>
                                         <constraint firstItem="Qr0-Lv-Uhx" firstAttribute="leading" secondItem="Au1-X3-Hbi" secondAttribute="leading" constant="31.666666666666657" id="ONW-au-V3S"/>
                                         <constraint firstItem="FPm-53-q4h" firstAttribute="top" secondItem="ebH-fg-LdN" secondAttribute="bottom" constant="11" id="Qfc-6D-V62"/>
@@ -744,8 +744,8 @@
             <viewLayoutGuide key="safeArea" id="ISB-d8-UfZ"/>
             <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
-                <constraint firstItem="wv9-SX-12r" firstAttribute="top" secondItem="ISB-d8-UfZ" secondAttribute="top" constant="-59" id="3ir-mE-Bba"/>
                 <constraint firstAttribute="trailing" secondItem="Iru-ED-5gO" secondAttribute="trailing" id="72d-Y6-FBw"/>
+                <constraint firstItem="wv9-SX-12r" firstAttribute="top" secondItem="Aa2-mq-UN3" secondAttribute="top" id="HCG-q1-UZV"/>
                 <constraint firstItem="Iru-ED-5gO" firstAttribute="leading" secondItem="Aa2-mq-UN3" secondAttribute="leading" id="HuH-ao-7EM"/>
                 <constraint firstItem="ISB-d8-UfZ" firstAttribute="trailing" secondItem="nom-2i-dXh" secondAttribute="trailing" constant="611" id="Rtf-XT-uBE"/>
                 <constraint firstItem="ISB-d8-UfZ" firstAttribute="leading" secondItem="nom-2i-dXh" secondAttribute="leading" constant="300" id="cr6-Bo-Bic"/>

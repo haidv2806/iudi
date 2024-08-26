@@ -1,15 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="NotificationViewController" customModule="IUDI" customModuleProvider="target">
             <connections>
+                <outlet property="backBtn" destination="lfN-fm-KjG" id="QiJ-mc-SS7"/>
                 <outlet property="view" destination="Ki0-fb-uL5" id="IhF-3q-ilR"/>
             </connections>
         </placeholder>
@@ -42,28 +43,33 @@
                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" image="Rectangle 102" translatesAutoresizingMaskIntoConstraints="NO" id="f1n-fa-sNq">
                             <rect key="frame" x="0.0" y="0.0" width="393" height="98"/>
                         </imageView>
-                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="Vector 3" translatesAutoresizingMaskIntoConstraints="NO" id="rJc-UX-bOH">
-                            <rect key="frame" x="25" y="54" width="19" height="34"/>
-                        </imageView>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Thông Báo" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f4f-5S-AfB">
                             <rect key="frame" x="0.0" y="60" width="393" height="28"/>
                             <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <nil key="highlightedColor"/>
                         </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lfN-fm-KjG">
+                            <rect key="frame" x="25" y="54" width="19" height="34"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" image="Vector 3"/>
+                            <connections>
+                                <action selector="btnHandle:" destination="-1" eventType="touchUpInside" id="d19-Id-jRy"/>
+                            </connections>
+                        </button>
                     </subviews>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
-                        <constraint firstItem="rJc-UX-bOH" firstAttribute="leading" secondItem="lFr-1L-RIO" secondAttribute="leading" constant="25" id="B2k-cb-ldR"/>
+                        <constraint firstItem="lfN-fm-KjG" firstAttribute="leading" secondItem="lFr-1L-RIO" secondAttribute="leading" constant="25" id="GLQ-fX-BrP"/>
                         <constraint firstAttribute="trailing" secondItem="f4f-5S-AfB" secondAttribute="trailing" id="JJc-kM-v01"/>
                         <constraint firstItem="f1n-fa-sNq" firstAttribute="leading" secondItem="lFr-1L-RIO" secondAttribute="leading" id="JUI-Re-4ge"/>
                         <constraint firstAttribute="trailing" secondItem="f1n-fa-sNq" secondAttribute="trailing" id="PA8-Uo-oHf"/>
                         <constraint firstItem="f4f-5S-AfB" firstAttribute="leading" secondItem="lFr-1L-RIO" secondAttribute="leading" id="R0a-Ai-Lce"/>
-                        <constraint firstItem="f4f-5S-AfB" firstAttribute="bottom" secondItem="rJc-UX-bOH" secondAttribute="bottom" id="ees-BY-VBb"/>
                         <constraint firstItem="f4f-5S-AfB" firstAttribute="top" secondItem="lFr-1L-RIO" secondAttribute="top" constant="60" id="gRc-x6-bkx"/>
                         <constraint firstItem="vY2-7p-9A7" firstAttribute="top" secondItem="f1n-fa-sNq" secondAttribute="top" id="gnJ-4q-Tdc"/>
                         <constraint firstItem="f4f-5S-AfB" firstAttribute="trailing" secondItem="vY2-7p-9A7" secondAttribute="trailing" id="qBR-F5-HJK"/>
                         <constraint firstItem="f1n-fa-sNq" firstAttribute="top" secondItem="lFr-1L-RIO" secondAttribute="top" id="x73-TH-Rb2"/>
+                        <constraint firstItem="lfN-fm-KjG" firstAttribute="top" secondItem="lFr-1L-RIO" secondAttribute="top" constant="54" id="yqM-b0-GGK"/>
                     </constraints>
                 </view>
             </subviews>

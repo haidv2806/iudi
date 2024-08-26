@@ -1,15 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AboutViewController" customModule="IUDI" customModuleProvider="target">
             <connections>
+                <outlet property="backBtn" destination="FmC-SA-jLC" id="dQz-0w-WdB"/>
                 <outlet property="view" destination="ljb-gQ-DX1" id="BYW-FW-Vq1"/>
             </connections>
         </placeholder>
@@ -42,21 +43,26 @@
                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" image="Rectangle 102" translatesAutoresizingMaskIntoConstraints="NO" id="tgh-Rb-HGE">
                             <rect key="frame" x="0.0" y="0.0" width="393" height="98"/>
                         </imageView>
-                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="Vector 3" translatesAutoresizingMaskIntoConstraints="NO" id="L0r-jX-Xfj">
-                            <rect key="frame" x="25" y="54" width="19" height="34"/>
-                        </imageView>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Giới thiệu về chúng tôi" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bkd-zW-07U">
                             <rect key="frame" x="0.0" y="60" width="393" height="28"/>
                             <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <nil key="highlightedColor"/>
                         </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FmC-SA-jLC">
+                            <rect key="frame" x="24" y="54" width="19" height="34"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" image="Vector 3"/>
+                            <connections>
+                                <action selector="btnHandle:" destination="-1" eventType="touchUpInside" id="rCx-Mg-Xuw"/>
+                            </connections>
+                        </button>
                     </subviews>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
-                        <constraint firstItem="Bkd-zW-07U" firstAttribute="bottom" secondItem="L0r-jX-Xfj" secondAttribute="bottom" id="2NH-Ux-LMY"/>
-                        <constraint firstItem="L0r-jX-Xfj" firstAttribute="leading" secondItem="690-SU-D4E" secondAttribute="leading" constant="25" id="71k-to-boM"/>
+                        <constraint firstItem="FmC-SA-jLC" firstAttribute="leading" secondItem="690-SU-D4E" secondAttribute="leading" constant="24" id="5C4-AA-M5n"/>
                         <constraint firstItem="tgh-Rb-HGE" firstAttribute="top" secondItem="690-SU-D4E" secondAttribute="top" id="7JI-0h-uCH"/>
+                        <constraint firstItem="FmC-SA-jLC" firstAttribute="top" secondItem="690-SU-D4E" secondAttribute="top" constant="54" id="7j6-uc-bN5"/>
                         <constraint firstItem="AQf-sS-lrs" firstAttribute="top" secondItem="tgh-Rb-HGE" secondAttribute="top" id="9Zg-nF-OtE"/>
                         <constraint firstItem="tgh-Rb-HGE" firstAttribute="leading" secondItem="690-SU-D4E" secondAttribute="leading" id="Bh9-aj-943"/>
                         <constraint firstAttribute="trailing" secondItem="tgh-Rb-HGE" secondAttribute="trailing" id="GJq-iE-Isi"/>

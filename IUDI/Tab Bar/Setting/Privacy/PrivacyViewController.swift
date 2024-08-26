@@ -9,6 +9,7 @@ import UIKit
 import DropDown
 
 class PrivacyViewController: UIViewController {
+    @IBOutlet weak var backBtn: UIButton!
 
     @IBOutlet weak var lineAllowView: UIImageView!
     @IBOutlet weak var allowButton: UIButton!
@@ -32,8 +33,9 @@ class PrivacyViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        title = "Quyền riêng tư"
+        self.navigationItem.setHidesBackButton(true, animated: true)
+        let backButton = UIBarButtonItem(customView: backBtn)
+        self.navigationItem.leftBarButtonItem = backButton
         // Do any additional setup after loading the view.
         createDropDown()
     }
@@ -89,5 +91,14 @@ class PrivacyViewController: UIViewController {
     @IBAction func blockMessTapped(_ sender: Any) {
         let vc = BlockMessViewController()
         navigationController?.pushViewController(vc, animated: true)
+    }
+    
+    @IBAction func btnHandle(_ sender: UIButton) {
+        switch sender {
+        case backBtn :
+            navigationController?.popViewController(animated: true)
+        default:
+            break
+        }
     }
 }

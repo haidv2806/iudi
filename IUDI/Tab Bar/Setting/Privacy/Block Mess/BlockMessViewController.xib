@@ -1,15 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BlockMessViewController" customModule="IUDI" customModuleProvider="target">
             <connections>
+                <outlet property="backBtn" destination="ljK-gz-Bdn" id="Ywa-DA-FYE"/>
                 <outlet property="view" destination="H14-BK-oVD" id="OKV-Na-012"/>
             </connections>
         </placeholder>
@@ -42,27 +43,33 @@
                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" image="Rectangle 102" translatesAutoresizingMaskIntoConstraints="NO" id="JYi-s6-Ahf">
                             <rect key="frame" x="0.0" y="0.0" width="393" height="98"/>
                         </imageView>
-                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="Vector 3" translatesAutoresizingMaskIntoConstraints="NO" id="nWZ-bs-agK">
-                            <rect key="frame" x="25" y="54" width="19" height="34"/>
-                        </imageView>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Chặn Tin Nhắn" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aRo-Yp-RZN">
                             <rect key="frame" x="0.0" y="60" width="393" height="28"/>
                             <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <nil key="highlightedColor"/>
                         </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ljK-gz-Bdn">
+                            <rect key="frame" x="24" y="54" width="19" height="40"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" image="Vector 3"/>
+                            <connections>
+                                <action selector="btnHandle:" destination="-1" eventType="touchUpInside" id="SjW-ZX-494"/>
+                            </connections>
+                        </button>
                     </subviews>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
+                        <constraint firstItem="ljK-gz-Bdn" firstAttribute="top" secondItem="hRn-2T-6N0" secondAttribute="top" constant="54" id="0hW-8a-gYC"/>
                         <constraint firstItem="YFk-uw-itE" firstAttribute="top" secondItem="JYi-s6-Ahf" secondAttribute="top" id="EZj-hI-OsM"/>
                         <constraint firstItem="aRo-Yp-RZN" firstAttribute="top" secondItem="hRn-2T-6N0" secondAttribute="top" constant="60" id="JaT-Ok-aTB"/>
                         <constraint firstItem="aRo-Yp-RZN" firstAttribute="leading" secondItem="hRn-2T-6N0" secondAttribute="leading" id="NU0-Fh-KmO"/>
                         <constraint firstItem="JYi-s6-Ahf" firstAttribute="leading" secondItem="hRn-2T-6N0" secondAttribute="leading" id="NqQ-R4-MVI"/>
                         <constraint firstItem="JYi-s6-Ahf" firstAttribute="top" secondItem="hRn-2T-6N0" secondAttribute="top" id="U1X-J3-vuk"/>
-                        <constraint firstItem="aRo-Yp-RZN" firstAttribute="bottom" secondItem="nWZ-bs-agK" secondAttribute="bottom" id="bSr-py-1Ge"/>
-                        <constraint firstItem="nWZ-bs-agK" firstAttribute="leading" secondItem="hRn-2T-6N0" secondAttribute="leading" constant="25" id="bVM-mv-9oq"/>
+                        <constraint firstItem="ljK-gz-Bdn" firstAttribute="leading" secondItem="hRn-2T-6N0" secondAttribute="leading" constant="24" id="bQz-Fa-rXh"/>
                         <constraint firstAttribute="trailing" secondItem="aRo-Yp-RZN" secondAttribute="trailing" id="mhH-tE-v3f"/>
                         <constraint firstItem="aRo-Yp-RZN" firstAttribute="trailing" secondItem="YFk-uw-itE" secondAttribute="trailing" id="qRc-0B-aiw"/>
+                        <constraint firstItem="aRo-Yp-RZN" firstAttribute="centerY" secondItem="ljK-gz-Bdn" secondAttribute="centerY" id="s8H-RZ-l1F"/>
                         <constraint firstAttribute="trailing" secondItem="JYi-s6-Ahf" secondAttribute="trailing" id="sE7-Np-q67"/>
                     </constraints>
                 </view>

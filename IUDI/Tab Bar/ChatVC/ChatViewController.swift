@@ -55,20 +55,20 @@ class ChatViewController: UIViewController,ServerImageHandle {
     
     func setupView(){
         backBtn.isEnabled = false
-        searchBar.layer.opacity = 0
+        searchBar.layer.opacity = 1
 //        searchBtn.tintColor = .black
     }
     
-    func searchBarLayout(){
-        showSearchBar.toggle()
-        backBtn.isEnabled = showSearchBar
-        print("showSearchBar:\(showSearchBar)")
-        UIView.animate(withDuration: 1, animations: {
-            self.searchBarConstraint.constant = self.showSearchBar ? (self.view.frame.width - 32) : 48
-            self.searchBar.layer.opacity = self.showSearchBar ? 1 : 0
-            self.view.layoutIfNeeded()
-        })
-    }
+//    func searchBarLayout(){
+//        showSearchBar.toggle()
+//        backBtn.isEnabled = showSearchBar
+//        print("showSearchBar:\(showSearchBar)")
+//        UIView.animate(withDuration: 1, animations: {
+//            self.searchBarConstraint.constant = self.showSearchBar ? (self.view.frame.width - 32) : 48
+//            self.searchBar.layer.opacity = self.showSearchBar ? 1 : 0
+//            self.view.layoutIfNeeded()
+//        })
+//    }
     
     func gotoChatVC(data: ChatData){
         let vc = MessageViewController()
@@ -87,10 +87,10 @@ class ChatViewController: UIViewController,ServerImageHandle {
 
 //            searchBarLayout()
 //            print("search")
-        case backBtn:
+//        case backBtn:
 //            listentSeenMessageEvent()
 
-            searchBarLayout()
+//            searchBarLayout()
         default:
             break
         }
