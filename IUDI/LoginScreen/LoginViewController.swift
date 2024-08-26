@@ -89,8 +89,8 @@ class LoginViewController: UIViewController, UITextFieldDelegate, CheckValid {
         // Đặt hình ảnh ban đầu cho nút
         let checkImage = UIImage(systemName: "checkmark.square")
         rememberPasswordBtn.setBackgroundImage(checkImage, for: .normal)
-        standardBorder(textField: userNameTF)
-        standardBorder(textField: userPasswordTF)
+//        standardBorder(textField: userNameTF)
+//        standardBorder(textField: userPasswordTF)
         standardBtnCornerRadius(button: loginBtn)
     }
     

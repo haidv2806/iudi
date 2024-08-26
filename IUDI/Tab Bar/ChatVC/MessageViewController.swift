@@ -318,7 +318,7 @@ extension MessageViewController {
             let senderId = messageData["SenderID"] as? Int ?? 0
             let otherUserID = "\(senderId)"
             print("otherUserID:\(otherUserID)")
-            print("self.messageUserData?.otherUserId:\(self.messageUserData?.otherUserId)")
+            print("self.messageUserData?.otherUserId:\(String(describing: self.messageUserData?.otherUserId))")
             let messageText = messageData["Content"] as? String ?? ""
             let messageID = messageData["MessageID"] as? Int ?? 0
             print("messageText:\(messageText)")

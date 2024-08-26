@@ -15,7 +15,7 @@ class ResetPasswordViewController: UIViewController,CheckValid {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        standardBorder(textField: userEmailTF)
+//        standardBorder(textField: userEmailTF)
         standardBtnCornerRadius(button: resetBtn)
         checkInput()
         
