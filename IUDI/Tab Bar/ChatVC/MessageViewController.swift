@@ -73,6 +73,21 @@ class MessageViewController: MessagesViewController,MessagesLayoutDelegate, UIDo
         self.view.sendSubviewToBack(backgroundImageView)
 
         messageInputBar.delegate = self
+        
+        messageInputBar.inputTextView.textColor = .white
+        messageInputBar.contentView.backgroundColor = UIColor(hex: "#4d4d4d")
+        messageInputBar.backgroundView.backgroundColor = .black
+        
+        
+        //thêm padding
+        messageInputBar.inputTextView.translatesAutoresizingMaskIntoConstraints = false
+        messageInputBar.padding = UIEdgeInsets(top: 20, left: 12, bottom: 0, right: 12)
+//        messageInputBar.inputTextView.inputBarAccessoryView?.padding = UIEdgeInsets(top: 10, left: 20, bottom: 30, right: 0)
+
+        // Bo tròn góc
+        messageInputBar.contentView.layer.cornerRadius = 10
+        messageInputBar.contentView.layer.masksToBounds = true
+        
         addCameraBarButton()
         getAllChatData()
         subviewHandle()
