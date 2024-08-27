@@ -84,7 +84,12 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         tabBarVC.viewControllers = [homeNavVC, filterNavVC,groupNavVC,chatNavVC,settingNavVC]
         tabBarVC.modalPresentationStyle = .fullScreen
         tabBarVC.tabBar.tintColor = UIColor(named: "MainColor")
-        tabBarVC.tabBar.backgroundColor = .darkGray
+        tabBarVC.tabBar.backgroundColor = .black
+        
+        let topBorder = UIView(frame: CGRect(x: 0, y: 0, width: tabBarVC.tabBar.frame.width, height: 1))
+        topBorder.backgroundColor = UIColor.white
+        tabBarVC.tabBar.addSubview(topBorder)
+        
         tabBarVC.tabBar.layer.opacity = 1
         tabBarVC.tabBar.isTranslucent = true
         tabBarVC.tabBar.itemPositioning = .fill

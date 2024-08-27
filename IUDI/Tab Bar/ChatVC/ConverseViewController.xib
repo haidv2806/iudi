@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -50,7 +50,7 @@
                                         <constraint firstAttribute="width" constant="32" id="Zj7-lT-gbg"/>
                                     </constraints>
                                     <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                    <state key="normal" image="Arrow"/>
+                                    <state key="normal" image="Vector 3"/>
                                     <connections>
                                         <action selector="buttonHandle:" destination="-1" eventType="touchUpInside" id="TBZ-Dh-NR5"/>
                                     </connections>
@@ -67,9 +67,6 @@
                                         <action selector="buttonHandle:" destination="-1" eventType="touchUpInside" id="Ahf-a9-KZM"/>
                                     </connections>
                                 </button>
-                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Vector-23" translatesAutoresizingMaskIntoConstraints="NO" id="3mh-Sd-P7d">
-                                    <rect key="frame" x="353" y="12" width="40" height="40"/>
-                                </imageView>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GBJ-sJ-OJp">
                                     <rect key="frame" x="42" y="6.6666666666666714" width="291" height="35"/>
                                     <subviews>
@@ -124,9 +121,7 @@
                                 <constraint firstItem="kdd-AA-mX2" firstAttribute="leading" secondItem="GBJ-sJ-OJp" secondAttribute="trailing" constant="20" id="8SA-PE-XpK"/>
                                 <constraint firstItem="GBJ-sJ-OJp" firstAttribute="leading" secondItem="pNv-10-q5z" secondAttribute="trailing" constant="10" id="CAg-LX-bSi"/>
                                 <constraint firstItem="GBJ-sJ-OJp" firstAttribute="centerY" secondItem="txv-3r-hsC" secondAttribute="centerY" id="LB8-nu-6Nz"/>
-                                <constraint firstAttribute="trailing" secondItem="3mh-Sd-P7d" secondAttribute="trailing" id="Ss3-O9-OgU"/>
                                 <constraint firstAttribute="trailing" secondItem="kdd-AA-mX2" secondAttribute="trailing" constant="16" id="bTb-cA-oC3"/>
-                                <constraint firstItem="3mh-Sd-P7d" firstAttribute="top" secondItem="txv-3r-hsC" secondAttribute="top" constant="12" id="lHz-0x-bST"/>
                                 <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="48" id="mwE-Jn-D4Y"/>
                                 <constraint firstItem="pNv-10-q5z" firstAttribute="centerY" secondItem="txv-3r-hsC" secondAttribute="centerY" id="nNI-Wu-peW"/>
                                 <constraint firstItem="kdd-AA-mX2" firstAttribute="centerY" secondItem="txv-3r-hsC" secondAttribute="centerY" id="yYc-Dr-uSw"/>
@@ -158,9 +153,8 @@
         </view>
     </objects>
     <resources>
-        <image name="Arrow" width="32" height="32"/>
         <image name="Phone" width="24" height="25"/>
-        <image name="Vector-23" width="40" height="40"/>
+        <image name="Vector 3" width="19" height="34"/>
         <image name="anh1" width="328" height="385"/>
         <namedColor name="MainColor">
             <color red="0.078431372549019607" green="0.56862745098039214" blue="0.3411764705882353" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

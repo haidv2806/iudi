@@ -40,6 +40,37 @@ class MessageViewController: MessagesViewController,MessagesLayoutDelegate, UIDo
         messagesCollectionView.messagesDisplayDelegate = self
         messagesCollectionView.showsVerticalScrollIndicator = false
         messagesCollectionView.delegate = self
+        messagesCollectionView.backgroundColor = UIColor.clear
+        
+        self.view.overrideUserInterfaceStyle = .dark
+
+        self.view.backgroundColor = UIColor.black
+
+        
+        // Tạo UIImage từ tên file hình ảnh
+        let backgroundImage = UIImage(named: "background")
+        
+        // Tạo UIImageView với UIImage vừa tạo
+        let backgroundImageView = UIImageView()
+        backgroundImageView.image = backgroundImage
+        backgroundImageView.contentMode = .scaleAspectFill
+        
+        // Thêm UIImageView vào view
+        self.view.addSubview(backgroundImageView)
+        
+        // Tắt auto-resizing mask để sử dụng Auto Layout
+        backgroundImageView.translatesAutoresizingMaskIntoConstraints = false
+        
+        // Thêm ràng buộc để hình ảnh lấp đầy toàn bộ màn hình, bao gồm cả safe area
+        NSLayoutConstraint.activate([
+            backgroundImageView.topAnchor.constraint(equalTo: view.topAnchor),
+            backgroundImageView.bottomAnchor.constraint(equalTo: view.bottomAnchor),
+            backgroundImageView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
+            backgroundImageView.trailingAnchor.constraint(equalTo: view.trailingAnchor)
+        ])
+        
+        // Đưa UIImageView ra sau cùng trong view hierarchy
+        self.view.sendSubviewToBack(backgroundImageView)
 
         messageInputBar.delegate = self
         addCameraBarButton()
@@ -625,7 +656,7 @@ extension MessageViewController: DateConvertFormat {
         // Tạo văn bản được định dạng cho thời gian gửi
         let attributes: [NSAttributedString.Key: Any] = [
             .font: UIFont.systemFont(ofSize: 10),
-            .foregroundColor: UIColor.gray // Màu xám
+            .foregroundColor: UIColor.white // Màu xám
         ]
         return NSAttributedString(string: sentDate, attributes: attributes)
     }
@@ -639,7 +670,7 @@ extension MessageViewController: DateConvertFormat {
             // Tạo văn bản được định dạng cho thời gian gửi
             let attributes: [NSAttributedString.Key: Any] = [
                 .font: UIFont.systemFont(ofSize: 10),
-                .foregroundColor: UIColor.gray // Màu xám
+                .foregroundColor: UIColor.white // Màu xám
             ]
             return NSAttributedString(string: sentDate, attributes: attributes)
         }
@@ -678,7 +709,7 @@ extension MessageViewController {
     func messageBottomLabelAttributedText(for message: MessageType, at indexPath: IndexPath) -> NSAttributedString? {
         // Kiểm tra xem tin nhắn có phải là tin nhắn cuối cùng không
         if isLastMessage(at: indexPath) {
-            let attrs: [NSAttributedString.Key: Any] = [.font: UIFont.systemFont(ofSize: 12), .foregroundColor: UIColor.gray]
+            let attrs: [NSAttributedString.Key: Any] = [.font: UIFont.systemFont(ofSize: 12), .foregroundColor: UIColor.white]
             return NSAttributedString(string: isSeen, attributes: attrs)
         } else {
             return nil

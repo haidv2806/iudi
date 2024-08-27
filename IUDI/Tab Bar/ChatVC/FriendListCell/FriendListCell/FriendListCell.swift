@@ -46,9 +46,9 @@ class FriendListCell: UICollectionViewCell,DateConvertFormat,ServerImageHandle {
 
     }
     func seenTextHandle(isSeen: Int){
-        otherUserName.textColor = (isSeen == 0) ? .black : .gray
-        latestMessageDate.textColor = (isSeen == 0) ? .black : .gray
-        latestMessageContent.textColor = (isSeen == 0) ? .black : .gray
+        otherUserName.textColor = (isSeen == 0) ? .gray : .white
+        latestMessageDate.textColor = (isSeen == 0) ? .gray : .white
+        latestMessageContent.textColor = (isSeen == 0) ? .gray : .white
         isRead.isHidden = (isSeen == 0) ? true : false
         notSeenMessageNumber.isHidden = (isSeen == 0) ? true : true
     }
