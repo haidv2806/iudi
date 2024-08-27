@@ -67,7 +67,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         let groupVC = GroupViewController()
         //        filterVC.title = "Filter"
         let groupNavVC = UINavigationController(rootViewController: groupVC)
-        groupNavVC.tabBarItem = UITabBarItem(title: nil, image: UIImage(named: "News-UnSelect"), selectedImage: UIImage(named: "News-Selected"))
+        groupNavVC.tabBarItem = UITabBarItem(title: nil, image: UIImage(named: "Vector-2"), selectedImage: UIImage(named: "cộng đồng xanh"))
 //        UserInputViewController
         let chatVC = ChatViewController()
 //        let chatVC = UserInputViewController()
@@ -84,11 +84,17 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         tabBarVC.viewControllers = [homeNavVC, filterNavVC,groupNavVC,chatNavVC,settingNavVC]
         tabBarVC.modalPresentationStyle = .fullScreen
         tabBarVC.tabBar.tintColor = UIColor(named: "MainColor")
-        tabBarVC.tabBar.backgroundColor = .black
+        tabBarVC.tabBar.backgroundColor = UIColor(hex: "#111111")
         
-        let topBorder = UIView(frame: CGRect(x: 0, y: 0, width: tabBarVC.tabBar.frame.width, height: 1))
-        topBorder.backgroundColor = UIColor.white
-        tabBarVC.tabBar.addSubview(topBorder)
+        // Tạo UIImageView với ảnh nền
+        let backgroundImageView = UIImageView(frame: tabBarVC.tabBar.bounds)
+        backgroundImageView.image = UIImage(named: "Rectangle 21") // Thay "your_image_name" bằng tên ảnh của bạn
+        backgroundImageView.contentMode = .scaleAspectFill // Điều chỉnh chế độ hiển thị ảnh nếu cần
+
+        // Thêm UIImageView vào tabBar
+        tabBarVC.tabBar.insertSubview(backgroundImageView, at: 0)
+        
+        
         
         tabBarVC.tabBar.layer.opacity = 1
         tabBarVC.tabBar.isTranslucent = true

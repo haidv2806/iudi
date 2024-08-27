@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		08772EC32C7D8A0F0080A481 /* hexColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08772EC22C7D8A0F0080A481 /* hexColor.swift */; };
 		6B5541A228065D7AE7CAE4FD /* Pods_IUDITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A85C6EA8E23A90E04CE3A56 /* Pods_IUDITests.framework */; };
 		99793040C9AE4F5AD0955E7C /* Pods_IUDI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 888718E28E8066911DF3A882 /* Pods_IUDI.framework */; };
 		A401924A2BC820AC006C536B /* Datas.swift in Sources */ = {isa = PBXBuildFile; fileRef = A40192492BC820AC006C536B /* Datas.swift */; };
@@ -173,6 +174,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		08772EC22C7D8A0F0080A481 /* hexColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = hexColor.swift; sourceTree = "<group>"; };
 		08FDA6F46F4FCD165193BF25 /* Pods-IUDI-IUDIUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IUDI-IUDIUITests.debug.xcconfig"; path = "Target Support Files/Pods-IUDI-IUDIUITests/Pods-IUDI-IUDIUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		1F73342BEDD74C4D8573FB45 /* Pods_IUDI_IUDIUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IUDI_IUDIUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1FE7B9788E723F2941C05BE6 /* Pods-IUDI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IUDI.release.xcconfig"; path = "Target Support Files/Pods-IUDI/Pods-IUDI.release.xcconfig"; sourceTree = "<group>"; };
@@ -529,6 +531,7 @@
 			children = (
 				A48A41E22BC3F56900EA01F8 /* Base64ImageHandle.swift */,
 				A4A5174F2B86FB3200AD4CE3 /* UIView+Extension.swift */,
+				08772EC22C7D8A0F0080A481 /* hexColor.swift */,
 				A4712DA52B906CBE004903AA /* Add+Shadow+UIView.swift */,
 				A483D0452B885BC700DD6B15 /* CheckValid.swift */,
 				A443A5262BBA684A002ECBB6 /* DownloadImage.swift */,
@@ -1268,6 +1271,7 @@
 				A4A517042B86E52100AD4CE3 /* SceneDelegate.swift in Sources */,
 				A470F49F2BA30D760094A665 /* NotificationViewController.swift in Sources */,
 				A42BCBFA2BA20D8400B72DF6 /* FriendListCell.swift in Sources */,
+				08772EC32C7D8A0F0080A481 /* hexColor.swift in Sources */,
 				C0F643D62BF09A9500BD2332 /* UserProfiles+CoreDataProperties.swift in Sources */,
 				A483D0462B885BC700DD6B15 /* CheckValid.swift in Sources */,
 			);
