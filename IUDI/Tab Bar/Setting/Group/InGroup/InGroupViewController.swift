@@ -18,6 +18,8 @@ class InGroupViewController: UIViewController, PostsGroupVCDelegate,ServerImageH
     @IBOutlet weak var postsButton: UIButton!
     @IBOutlet weak var avatarView: UIImageView!
     @IBOutlet weak var hideSubViewBtn: UIButton!
+    @IBOutlet weak var backBtn: UIButton!
+    @IBOutlet weak var groupName: UILabel!
     @IBOutlet weak var subviewLocation: NSLayoutConstraint!
     @IBOutlet weak var deletePost: UIButton!
     @IBOutlet weak var hidePost: UIButton!
@@ -38,10 +40,14 @@ class InGroupViewController: UIViewController, PostsGroupVCDelegate,ServerImageH
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.navigationItem.setHidesBackButton(true, animated: true)
+        let backButton = UIBarButtonItem(customView: backBtn)
+        self.navigationItem.leftBarButtonItem = backButton
         setupCollectionview()
         loadPostGroupFrombegin()
         setUpView()
-        title = groupTitle
+        groupName.text = groupTitle
+//        title = groupTitle
         pullToRefesh()
     }
 
@@ -60,9 +66,10 @@ class InGroupViewController: UIViewController, PostsGroupVCDelegate,ServerImageH
         subView.isHidden = true
         postsButton.layer.borderWidth = 1
         postsButton.layer.cornerRadius = 22
-        postsButton.backgroundColor = UIColor(named: "Black")
+        postsButton.layer.borderColor = CGColor(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
+        postsButton.backgroundColor = UIColor(named: "White")
         postsButton.tintColor = UIColor.clear
-        title = "Nhóm"
+//        title = "Nhóm"
         let userInfo = UserInfoCoreData.shared.fetchProfileFromCoreData()
         avatarView.image = convertStringToImage(imageString: userInfo?.userAvatarUrl ?? "")
     }
@@ -81,6 +88,8 @@ class InGroupViewController: UIViewController, PostsGroupVCDelegate,ServerImageH
             print("deletePost")
         case hidePost:
             print("deletePost")
+        case backBtn :
+            navigationController?.popViewController(animated: true)
         default:
             break
         }
