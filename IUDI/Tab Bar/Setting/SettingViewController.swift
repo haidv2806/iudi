@@ -39,7 +39,8 @@ class SettingViewController: UIViewController, ServerImageHandle {
     }
     override func viewDidLayoutSubviews() {
         let cornerRadius = userAvatar.bounds.width
-        userAvatar.layer.cornerRadius = cornerRadius / 2
+//        userAvatar.layer.cornerRadius = cornerRadius / 2
+        userAvatar.layer.cornerRadius = self.userAvatar.frame.height / 2
         userAvatar.clipsToBounds = true
         print("frame width: \(cornerRadius)")
         print("frame width: \(cornerRadius/2)")
@@ -63,6 +64,7 @@ class SettingViewController: UIViewController, ServerImageHandle {
                 if let image = image {
                     // Set the image to the UIButton
                     self.userAvatar.image = image
+
                 } else {
                     // Handle the case where the image could not be loaded
                     print("Failed to load image.")

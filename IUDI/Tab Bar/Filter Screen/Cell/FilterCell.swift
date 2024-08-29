@@ -32,6 +32,7 @@ class FilterCell: UICollectionViewCell,DateConvertFormat, ServerImageHandle {
                 if let image = image {
                     // Set the image to the UIButton
                     self.userImage.image = image
+                    self.userImage.layer.cornerRadius = self.userImage.frame.height / 2
                 } else {
                     // Handle the case where the image could not be loaded
                     print("Failed to load image.")

@@ -25,7 +25,7 @@ class PreviousChatViewController: UIViewController, ServerImageHandle {
         super.viewDidLoad()
         self.tabBarController?.tabBar.isHidden = true
         setupView()
-        targetAvatar.image = testImage
+//        targetAvatar.image = testImage
         getUserProfile()
         
     }
@@ -38,15 +38,23 @@ class PreviousChatViewController: UIViewController, ServerImageHandle {
     func setupView(){
 //        userAvatar.layer.cornerRadius = 8
 //        targetAvatar.layer.cornerRadius = 8
-        userAvatar.frame.size = CGSize(width: 165, height: 165)
-        userAvatar.layer.cornerRadius = userAvatar.frame.size.width / 2
-        userAvatar.clipsToBounds = true
+//        userAvatar.frame.size = CGSize(width: 165, height: 165)
+//        userAvatar.layer.cornerRadius = userAvatar.frame.size.width / 2
+//        userAvatar.contentMode = .scaleAspectFit
+//        userAvatar.clipsToBounds = true
 //        userAvatar.transform = CGAffineTransform(rotationAngle: rotationImage(angle: -19))
 //        userHeartImg.transform = CGAffineTransform(rotationAngle: rotationImage(angle: -19))
         
-        targetAvatar.frame.size = CGSize(width: 165, height: 165)
-        targetAvatar.layer.cornerRadius = targetAvatar.frame.size.width / 2
-        targetAvatar.clipsToBounds = true
+//        targetAvatar.frame.size = CGSize(width: 165, height: 165)
+//        targetAvatar.layer.cornerRadius = targetAvatar.frame.size.width / 2
+//        targetAvatar.contentMode = .scaleAspectFit
+//        targetAvatar.clipsToBounds = true
+        
+        
+        // Set the image to the UIImageView
+//        self.userAvatar.image = resizedImage
+//        self.userAvatar.layer.cornerRadius = 140 / 2
+//        self.userAvatar.clipsToBounds = true
 //        targetAvatar.transform = CGAffineTransform(rotationAngle: rotationImage(angle: 10))
 //        targetHeartImg.transform = CGAffineTransform(rotationAngle: rotationImage(angle: 10))
         standardBtnCornerRadius(button: chatBtn)
@@ -81,11 +89,28 @@ class PreviousChatViewController: UIViewController, ServerImageHandle {
                 DispatchQueue.main.async {
 //                    self.userAvatar.image = self.convertStringToImage(imageString: avatarUrl)
                     
+//                    self.convertUrlToImage(url: avatarUrl) { image in
+//                        DispatchQueue.main.async {
+//                            if let image = image {
+//                                // Set the image to the UIButton
+//                                self.userAvatar.image = image
+//                            } else {
+//                                // Handle the case where the image could not be loaded
+//                                print("Failed to load image.")
+//                            }
+//                        }
+//                    }
+                    
                     self.convertUrlToImage(url: avatarUrl) { image in
                         DispatchQueue.main.async {
                             if let image = image {
-                                // Set the image to the UIButton
-                                self.userAvatar.image = image
+                                // Resize the image to 140x140 pixels
+                                let resizedImage = image.resize(to: CGSize(width: 165, height: 165))
+                                
+                                // Set the image to the UIImageView
+                                self.userAvatar.image = resizedImage
+                                self.userAvatar.layer.cornerRadius = 165 / 2
+                                self.userAvatar.clipsToBounds = true
                             } else {
                                 // Handle the case where the image could not be loaded
                                 print("Failed to load image.")
@@ -113,6 +138,7 @@ class PreviousChatViewController: UIViewController, ServerImageHandle {
         // Khởi tạo một instance của struct MessageUserData
         let messageUserData = MessageUserData(
             otherUserAvatar: targetAvatar.image!, // Ảnh đại diện của người dùng khác
+            
             otherUserFullName: dataUser?.fullName ?? "",
             otherUserId: "\(dataUser?.userID ?? 0)", otherLastActivityTime: dataUser?.lastActivityTime ?? "Wed, 27 Mar 2024 11:43:58 GMT"
         )

@@ -308,11 +308,11 @@
                                             </constraints>
                                         </view>
                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="anh1" translatesAutoresizingMaskIntoConstraints="NO" id="mP6-9y-FBr">
-                                            <rect key="frame" x="3" y="80" width="140" height="120"/>
+                                            <rect key="frame" x="23" y="80" width="120" height="120"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="120" id="CBo-Br-9z5"/>
-                                                <constraint firstAttribute="width" secondItem="mP6-9y-FBr" secondAttribute="height" constant="20" id="Jw0-Rb-pAI"/>
-                                                <constraint firstAttribute="width" secondItem="mP6-9y-FBr" secondAttribute="height" constant="20" id="TDo-vk-M51"/>
+                                                <constraint firstAttribute="width" secondItem="mP6-9y-FBr" secondAttribute="height" id="Jw0-Rb-pAI"/>
+                                                <constraint firstAttribute="width" secondItem="mP6-9y-FBr" secondAttribute="height" id="TDo-vk-M51"/>
                                             </constraints>
                                         </imageView>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qr0-Lv-Uhx">
@@ -701,7 +701,7 @@
                                         <constraint firstItem="Qr0-Lv-Uhx" firstAttribute="top" secondItem="mP6-9y-FBr" secondAttribute="bottom" id="NII-Df-5Vp"/>
                                         <constraint firstItem="Qr0-Lv-Uhx" firstAttribute="leading" secondItem="Au1-X3-Hbi" secondAttribute="leading" constant="31.666666666666657" id="ONW-au-V3S"/>
                                         <constraint firstItem="FPm-53-q4h" firstAttribute="top" secondItem="ebH-fg-LdN" secondAttribute="bottom" constant="11" id="Qfc-6D-V62"/>
-                                        <constraint firstItem="mP6-9y-FBr" firstAttribute="leading" secondItem="Au1-X3-Hbi" secondAttribute="leading" constant="3" id="RP2-Pg-mUk"/>
+                                        <constraint firstItem="mP6-9y-FBr" firstAttribute="leading" secondItem="Au1-X3-Hbi" secondAttribute="leading" constant="23" id="RP2-Pg-mUk"/>
                                         <constraint firstItem="DS4-qi-LqP" firstAttribute="leading" secondItem="mP6-9y-FBr" secondAttribute="trailing" constant="7" id="Rc3-Kv-Yed"/>
                                         <constraint firstItem="SKg-lE-eHK" firstAttribute="centerY" secondItem="Dma-YO-Vzb" secondAttribute="centerY" id="T45-hR-vt2"/>
                                         <constraint firstItem="ebH-fg-LdN" firstAttribute="top" secondItem="1zH-dU-rfG" secondAttribute="bottom" constant="11" id="UfU-zR-AB0"/>

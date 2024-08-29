@@ -175,18 +175,18 @@
                             <rect key="frame" x="210" y="0.0" width="165" height="165"/>
                         </imageView>
                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="Love" translatesAutoresizingMaskIntoConstraints="NO" id="EQh-5M-lWa">
-                            <rect key="frame" x="158" y="50" width="114" height="67"/>
+                            <rect key="frame" x="158" y="50" width="114" height="83"/>
                         </imageView>
                     </subviews>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
                         <constraint firstItem="EQh-5M-lWa" firstAttribute="top" secondItem="5uu-Vr-oZI" secondAttribute="top" constant="50" id="9de-Ud-o1e"/>
-                        <constraint firstItem="cQj-XO-5P8" firstAttribute="top" secondItem="5uu-Vr-oZI" secondAttribute="top" id="GdY-1Y-WFy"/>
-                        <constraint firstItem="YHW-WY-Lc3" firstAttribute="leading" secondItem="cQj-XO-5P8" secondAttribute="trailing" id="f9z-Wz-HHa"/>
+                        <constraint firstItem="YHW-WY-Lc3" firstAttribute="leading" secondItem="EQh-5M-lWa" secondAttribute="trailing" constant="-62" id="Bfz-3f-ges"/>
+                        <constraint firstItem="cQj-XO-5P8" firstAttribute="top" secondItem="5uu-Vr-oZI" secondAttribute="top" id="T5z-pz-CRF"/>
+                        <constraint firstItem="YHW-WY-Lc3" firstAttribute="top" secondItem="5uu-Vr-oZI" secondAttribute="top" id="Tbd-ix-Uni"/>
                         <constraint firstItem="EQh-5M-lWa" firstAttribute="leading" secondItem="5uu-Vr-oZI" secondAttribute="leading" constant="158" id="lkE-qD-ndp"/>
                         <constraint firstItem="EQh-5M-lWa" firstAttribute="centerX" secondItem="5uu-Vr-oZI" secondAttribute="centerX" id="mBU-4q-9Pf"/>
-                        <constraint firstItem="cQj-XO-5P8" firstAttribute="leading" secondItem="5uu-Vr-oZI" secondAttribute="leading" constant="45" id="ryH-TT-Rog"/>
-                        <constraint firstItem="YHW-WY-Lc3" firstAttribute="top" secondItem="5uu-Vr-oZI" secondAttribute="top" id="uN2-cy-vPA"/>
+                        <constraint firstItem="EQh-5M-lWa" firstAttribute="leading" secondItem="cQj-XO-5P8" secondAttribute="trailing" constant="-52" id="wjF-zo-vVD"/>
                     </constraints>
                 </view>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XzS-ir-ifO">
@@ -312,7 +312,7 @@
         <image name="AI L VE" width="147" height="29"/>
         <image name="Bot" width="40" height="40"/>
         <image name="Ellipse 116" width="29" height="30"/>
-        <image name="Love" width="67" height="67"/>
+        <image name="Love" width="83" height="83"/>
         <image name="Love-2" width="55" height="55"/>
         <image name="Rectangle 20" width="330" height="50"/>
         <image name="Rectangle 20-2" width="330" height="50"/>
