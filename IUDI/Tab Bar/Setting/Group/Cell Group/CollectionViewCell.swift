@@ -35,7 +35,18 @@ class CollectionViewCell: UICollectionViewCell, ServerImageHandle, DateConvertFo
 
         numberOfMembers.text = "\(data.userNumber ?? 0) Thành viên"
         nameGroup.text = data.groupName ?? ""
-        imageGroup.image = convertStringToImage(imageString: data.avatarLink ?? "")
+//        imageGroup.image = convertStringToImage(imageString: data.avatarLink ?? "")
+        convertUrlToImage(url: data.avatarLink ?? "") { image in
+            DispatchQueue.main.async {
+                if let image = image {
+                    // Set the image to the UIButton
+                    self.imageGroup.image = image
+                } else {
+                    // Handle the case where the image could not be loaded
+                    print("Failed to load image.")
+                }
+            }
+        }
         time.text = convertDate(date: data.createAt ?? "", inputFormat: "EEE, dd MMM yyyy HH:mm:ss zzz", outputFormat: "yyyy-MM-dd")
 //        time.text = data.createAt ?? ""
 //        groupIDLabel.text = "\(data.groupID ?? 0)"

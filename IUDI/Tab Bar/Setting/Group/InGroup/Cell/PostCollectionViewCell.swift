@@ -64,8 +64,32 @@ class PostCollectionViewCell: UICollectionViewCell, ServerImageHandle, DateConve
         nameLabel.text = data.userFullName
         timeLabel.text = convertServerTimeString(data.postTime)
         
-        avatarView.image = convertStringToImage(imageString: data.avatar ?? "")
-        postsImage.image = convertStringToImage(imageString: data.photo ?? "")
+//        avatarView.image = convertStringToImage(imageString: data.avatar ?? "")
+        convertUrlToImage(url: data.avatar ?? "") { image in
+            DispatchQueue.main.async {
+                if let image = image {
+                    // Set the image to the UIButton
+                    self.avatarView.image = image
+                } else {
+                    // Handle the case where the image could not be loaded
+                    print("Failed to load image.")
+                }
+            }
+        }
+        
+//        postsImage.image = convertStringToImage(imageString: data.photo ?? "")
+        
+        convertUrlToImage(url: data.photo ?? "") { image in
+            DispatchQueue.main.async {
+                if let image = image {
+                    // Set the image to the UIButton
+                    self.postsImage.image = image
+                } else {
+                    // Handle the case where the image could not be loaded
+                    print("Failed to load image.")
+                }
+            }
+        }
         self.postId = data.postID
         self.userPostId = "\(data.userID ?? 0)"
         if userID == "\(data.userID ?? 0)" {

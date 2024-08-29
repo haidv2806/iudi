@@ -74,6 +74,17 @@ class ChatViewController: UIViewController,ServerImageHandle {
         let vc = MessageViewController()
         vc.title = "Chat"
         let userAvatar = convertStringToImage(imageString: data.otherAvatar ?? "")
+//        convertUrlToImage(url: data.otherAvatar ?? "") { image in
+//            DispatchQueue.main.async {
+//                if let image = image {
+//                    // Set the image to the UIButton
+//                    self.MessageUserData(otherUserAvatar: userAvatar, otherUserFullName: data.otherFullname ?? "", otherUserId: "\(data.otherUserID ?? 0)", otherLastActivityTime: data.otherLastActivityTime ?? "Wed, 27 Mar 2024 11:43:58 GMT")
+//                } else {
+//                    // Handle the case where the image could not be loaded
+//                    print("Failed to load image.")
+//                }
+//            }
+//        }
         let messageUserData = MessageUserData(otherUserAvatar: userAvatar, otherUserFullName: data.otherFullname ?? "", otherUserId: "\(data.otherUserID ?? 0)", otherLastActivityTime: data.otherLastActivityTime ?? "Wed, 27 Mar 2024 11:43:58 GMT")
         vc.messageUserData = messageUserData
         self.navigationController?.pushViewController(vc, animated: true)

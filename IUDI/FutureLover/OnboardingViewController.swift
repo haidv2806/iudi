@@ -22,11 +22,15 @@ class OnboardingViewController: UIViewController {
     @IBAction func btnHandle(_ sender: UIButton) {
         switch sender {
         case skipBtn:
+//            UserDefaults.standard.hasOnboarded = true
+//            AppDelegate.scene?.goToLogin()
+                        print("doneBtn")
+
+        case doneBtn:
+//            print("doneBtn")
+//            gotoUserInputVC()
             UserDefaults.standard.hasOnboarded = true
             AppDelegate.scene?.goToLogin()
-        case doneBtn:
-            print("doneBtn")
-            gotoUserInputVC()
         default:
             break
         }

@@ -79,7 +79,20 @@ class PreviousChatViewController: UIViewController, ServerImageHandle {
                 }
                 self.userName = userData.fullName
                 DispatchQueue.main.async {
-                    self.userAvatar.image = self.convertStringToImage(imageString: avatarUrl)
+//                    self.userAvatar.image = self.convertStringToImage(imageString: avatarUrl)
+                    
+                    self.convertUrlToImage(url: avatarUrl) { image in
+                        DispatchQueue.main.async {
+                            if let image = image {
+                                // Set the image to the UIButton
+                                self.userAvatar.image = image
+                            } else {
+                                // Handle the case where the image could not be loaded
+                                print("Failed to load image.")
+                            }
+                        }
+                    }
+                    
                 }
                 self.showLoading(isShow: false)
             case .failure(let error):

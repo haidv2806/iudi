@@ -60,11 +60,39 @@ class CommentCollectionViewCell: UICollectionViewCell, ServerImageHandle, DateCo
     func bindDataComment(data: Comment, favoriteCount: Int){
         if let photoUrl = data.photoURL {
             commentPhoto.image = convertStringToImage(imageString: photoUrl)
+            
+//            convertUrlToImage(url: photoUrl) { image in
+//                DispatchQueue.main.async {
+//                    if let image = image {
+//                        // Set the image to the UIButton
+//                        self.commentPhoto.image = image
+//                    } else {
+//                        // Handle the case where the image could not be loaded
+//                        print("Failed to load image.")
+//                    }
+//                }
+//            }
+//        }
+        
             commentPhotoSize.constant = 200
         } else {
             commentPhotoSize.constant = 1
         }
         userAvatar.image = convertStringToImage(imageString: data.avatar)
+        
+//                    convertUrlToImage(url: data.avatar) { image in
+//                        DispatchQueue.main.async {
+//                            if let image = image {
+//                                // Set the image to the UIButton
+//                                self.userAvatar.image = image
+//                            } else {
+//                                // Handle the case where the image could not be loaded
+//                                print("Failed to load image.")
+//                            }
+//                        }
+//                    }
+//                }
+        
         userName.text = data.fullName
         commentContent.text = data.content
         

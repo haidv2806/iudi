@@ -326,7 +326,20 @@ extension MessageViewController {
 extension MessageViewController: ServerImageHandle {
     func getUserProfile(){
         let userInfo = UserInfoCoreData.shared.fetchProfileFromCoreData()
-        self.userAvatar.image = convertStringToImage(imageString: userInfo?.userAvatarUrl ?? "")
+//        self.userAvatar.image = convertStringToImage(imageString: userInfo?.userAvatarUrl ?? "")
+        
+        convertUrlToImage(url: userInfo?.userAvatarUrl ?? "") { image in
+            DispatchQueue.main.async {
+                if let image = image {
+                    // Set the image to the UIButton
+                    self.userAvatar.image = image
+                } else {
+                    // Handle the case where the image could not be loaded
+                    print("Failed to load image.")
+                }
+            }
+        }
+        
         self.userFullName = userInfo?.userFullName
         self.currentUser = Sender(senderId: UserInfo.shared.getUserID() ?? "", displayName: self.userFullName ?? "KGsdgha")
     }

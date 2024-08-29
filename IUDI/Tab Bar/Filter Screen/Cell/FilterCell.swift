@@ -26,7 +26,19 @@ class FilterCell: UICollectionViewCell,DateConvertFormat, ServerImageHandle {
         cellUiView.layer.addSublayer(bottomBorder)
     }
     func blindata(data: Distance){
-        userImage.image = convertStringToImage(imageString: data.avatarLink ?? "")
+//        userImage.image = convertStringToImage(imageString: data.avatarLink ?? "")
+        convertUrlToImage(url: data.avatarLink ?? "") { image in
+            DispatchQueue.main.async {
+                if let image = image {
+                    // Set the image to the UIButton
+                    self.userImage.image = image
+                } else {
+                    // Handle the case where the image could not be loaded
+                    print("Failed to load image.")
+                }
+            }
+        }
+        
         let rawKilometers = (data.distance ?? 1.0) / 1000.0
         let roundedKilometers = round(rawKilometers * 10) / 10
         let formatter = NumberFormatter()

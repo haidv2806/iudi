@@ -71,7 +71,18 @@ class InGroupViewController: UIViewController, PostsGroupVCDelegate,ServerImageH
         postsButton.tintColor = UIColor.clear
 //        title = "Nhóm"
         let userInfo = UserInfoCoreData.shared.fetchProfileFromCoreData()
-        avatarView.image = convertStringToImage(imageString: userInfo?.userAvatarUrl ?? "")
+//        avatarView.image = convertStringToImage(imageString: userInfo?.userAvatarUrl ?? "")
+        convertUrlToImage(url: userInfo?.userAvatarUrl ?? "") { image in
+            DispatchQueue.main.async {
+                if let image = image {
+                    // Set the image to the UIButton
+                    self.avatarView.image = image
+                } else {
+                    // Handle the case where the image could not be loaded
+                    print("Failed to load image.")
+                }
+            }
+        }
     }
     
     @IBAction func buttonHandle(_ sender: UIButton) {

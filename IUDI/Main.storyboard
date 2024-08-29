@@ -1991,6 +1991,11 @@
             <point key="canvasLocation" x="3016" y="-27"/>
         </scene>
     </scenes>
+    <designables>
+        <designable name="4d4-Id-Xjp">
+            <size key="intrinsicContentSize" width="-1" height="33"/>
+        </designable>
+    </designables>
     <resources>
         <image name="AI L VE" width="147" height="29"/>
         <image name="App Icone" width="330" height="330"/>

@@ -157,7 +157,20 @@ class UserIntroduceViewController: UIViewController,ServerImageHandle {
                     self.showLoading(isShow: false)
                     return
                 }
-                userAvatar.image = convertStringToImage(imageString: userData.avatarLink ?? "")
+//                userAvatar.image = convertStringToImage(imageString: userData.avatarLink ?? "")
+                
+                convertUrlToImage(url: userData.avatarLink ?? "") { image in
+                    DispatchQueue.main.async {
+                        if let image = image {
+                            // Set the image to the UIButton
+                            self.userAvatar.image = image
+                        } else {
+                            // Handle the case where the image could not be loaded
+                            print("Failed to load image.")
+                        }
+                    }
+                }
+                
                         userNameLb.text = userData.fullName
                 userLocationLb.text = userData.currentAdd
                 let mainText = NSAttributedString(string: userData.bio ?? "", attributes: [NSAttributedString.Key.foregroundColor: UIColor.black])
@@ -189,7 +202,20 @@ class UserIntroduceViewController: UIViewController,ServerImageHandle {
     }
 
     func setupView(){
-        userAvatar.image = convertStringToImage(imageString: dataUser?.avatarLink ?? "")
+//        userAvatar.image = convertStringToImage(imageString: dataUser?.avatarLink ?? "")
+        
+        convertUrlToImage(url:dataUser?.avatarLink ?? "") { image in
+            DispatchQueue.main.async {
+                if let image = image {
+                    // Set the image to the UIButton
+                    self.userAvatar.image = image
+                } else {
+                    // Handle the case where the image could not be loaded
+                    print("Failed to load image.")
+                }
+            }
+        }
+        
         userNameLb.text = dataUser?.fullName
 //        userNameLb.text = "\(data.userID)"
         userLocationLb.text = dataUser?.currentAdd
@@ -286,7 +312,18 @@ extension UserIntroduceViewController : UICollectionViewDataSource, UICollection
         let photoID = userPhotos[indexPath.item].photoURL
 //        print("user chọn ảnh có id là : \(photoID) ")
         fullsizeImageHandle(isHidden: false)
-        fullsizeImage.image = convertStringToImage(imageString: photoID ?? "")
+//        fullsizeImage.image = convertStringToImage(imageString: photoID ?? "")
+        convertUrlToImage(url: photoID ?? "") { image in
+            DispatchQueue.main.async {
+                if let image = image {
+                    // Set the image to the UIButton
+                    self.fullsizeImage.image = image
+                } else {
+                    // Handle the case where the image could not be loaded
+                    print("Failed to load image.")
+                }
+            }
+        }
     }
 }
 extension UserIntroduceViewController: UIScrollViewDelegate {

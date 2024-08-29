@@ -28,7 +28,19 @@ class FriendListCell: UICollectionViewCell,DateConvertFormat,ServerImageHandle {
         dateFormatter.dateFormat = "EEE, dd MMM yyyy HH:mm:ss zzz"
         let localTimeString = dateFormatter.string(from: currentTime)
         print("Local Time: \(localTimeString)")
-        otherUserAvatar.image = convertStringToImage(imageString: data.otherAvatar ?? "")
+//        otherUserAvatar.image = convertStringToImage(imageString: data.otherAvatar ?? "")
+        
+        convertUrlToImage(url: data.otherAvatar ?? "") { image in
+            DispatchQueue.main.async {
+                if let image = image {
+                    // Set the image to the UIButton
+                    self.otherUserAvatar.image = image
+                } else {
+                    // Handle the case where the image could not be loaded
+                    print("Failed to load image.")
+                }
+            }
+        }
         otherUserName.text = data.otherFullname
         latestMessageDate.text = convertServerTimeString(data.messageTime)
 //        latestMessageDate.text = data.messageTime

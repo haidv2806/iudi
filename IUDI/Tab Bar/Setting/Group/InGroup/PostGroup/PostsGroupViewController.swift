@@ -65,7 +65,18 @@ class PostsGroupViewController: UIViewController, UITextViewDelegate {
     }
     func loadUserInfo(){
         let userInfo = UserInfoCoreData.shared.fetchProfileFromCoreData()
-        userAvatar.image = convertStringToImage(imageString: userInfo?.userAvatarUrl ?? "")
+//        userAvatar.image = convertStringToImage(imageString: userInfo?.userAvatarUrl ?? "")
+        convertUrlToImage(url: userInfo?.userAvatarUrl ?? "") { image in
+            DispatchQueue.main.async {
+                if let image = image {
+                    // Set the image to the UIButton
+                    self.userAvatar.image = image
+                } else {
+                    // Handle the case where the image could not be loaded
+                    print("Failed to load image.")
+                }
+            }
+        }
     }
     
     func updateTextViewHeight(){

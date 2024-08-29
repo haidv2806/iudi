@@ -232,7 +232,19 @@ extension ProfileViewController {
         userIntroductLb.text = userIntroduct.text
 //        self.userID = user.userID
         if let url = user.avatarLink{
-            userAvatar.image = convertStringToImage(imageString: url)
+//            userAvatar.image = convertStringToImage(imageString: url)
+            convertUrlToImage(url: url) { image in
+                DispatchQueue.main.async {
+                    if let image = image {
+                        // Set the image to the UIButton
+                        self.userAvatar.image = image
+                    } else {
+                        // Handle the case where the image could not be loaded
+                        print("Failed to load image.")
+                    }
+                }
+            }
+            
         }
     }
 }
