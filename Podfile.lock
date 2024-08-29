@@ -13,6 +13,9 @@ PODS:
   - MessageKit (3.8.0):
     - InputBarAccessoryView (~> 5.5.0)
   - ReadMoreTextView (3.0.1)
+  - SDWebImage (5.19.7):
+    - SDWebImage/Core (= 5.19.7)
+  - SDWebImage/Core (5.19.7)
   - Socket.IO-Client-Swift (16.1.0):
     - Starscream (~> 4.0.6)
   - SQLite.swift (0.14.1):
@@ -33,6 +36,7 @@ DEPENDENCIES:
   - MBProgressHUD (~> 1.2.0)
   - MessageKit (~> 3.8.0)
   - ReadMoreTextView
+  - SDWebImage
   - Socket.IO-Client-Swift (~> 16.1.0)
   - SQLite.swift (~> 0.14.0)
   - SwiftRangeSlider
@@ -51,6 +55,7 @@ SPEC REPOS:
     - MBProgressHUD
     - MessageKit
     - ReadMoreTextView
+    - SDWebImage
     - Socket.IO-Client-Swift
     - SQLite.swift
     - Starscream
@@ -69,12 +74,13 @@ SPEC CHECKSUMS:
   MBProgressHUD: 3ee5efcc380f6a79a7cc9b363dd669c5e1ae7406
   MessageKit: a1ba0c69ebead94029867853eb44dd05b9b3f453
   ReadMoreTextView: 19147adf93abce6d7271e14031a00303fe28720d
+  SDWebImage: 8a6b7b160b4d710e2a22b6900e25301075c34cb3
   Socket.IO-Client-Swift: ee4b8f80a3db18dd7f32b266ddf273310609443c
   SQLite.swift: 2992550ebf3c5b268bf4352603e3df87d2a4ed72
   Starscream: 19b5533ddb925208db698f0ac508a100b884a1b9
   SwiftRangeSlider: f86e3b637c961120158fa1a89277c8343845cbe4
   SwiftyJSON: 6faa0040f8b59dead0ee07436cbf76b73c08fd08
 
-PODFILE CHECKSUM: 8b7053ae3ea802cfb426da2a0f5d975d50764322
+PODFILE CHECKSUM: ae02c2e6402337ef91a7e3d6820180e9bf02e9d6
 
 COCOAPODS: 1.15.2

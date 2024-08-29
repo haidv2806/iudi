@@ -20,7 +20,7 @@ target 'IUDI' do
   pod 'MessageKit', '~> 3.8.0'
   pod 'DropDown'
   pod 'SQLite.swift', '~> 0.14.0'
-
+  pod 'SDWebImage'
 
   target 'IUDITests' do
     inherit! :search_paths

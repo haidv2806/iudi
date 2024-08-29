@@ -135,9 +135,9 @@ class MessageViewController: MessagesViewController,MessagesLayoutDelegate, UIDo
         }
         showLoading(isShow: true)
         let apiService = APIService.share
-        let subUrl = "pairmessage/\(userID)?other_userId=\(otherUserID)"
+        let subUrl = "pairmessage/\(userID)?other_userId=\(otherUserID)&page=1&limit=50"
         print("url:\(subUrl)")
-        apiService.apiHandleGetRequest(subUrl: subUrl,data: AllSingleChatData.self) { [weak self] result in
+        apiService.apiChatHandleGetRequest(subUrl: subUrl,data: AllSingleChatData.self) { [weak self] result in
             guard let self = self else {return}
             switch result {
             case .success(let data):
