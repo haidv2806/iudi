@@ -176,6 +176,50 @@
             endingLineNumber = "304"
             landmarkName = "getUserProfile()"
             landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "D9DBD387-9E35-4CE9-97E8-8CD41B51047C - 4e6cb437e07c5f57"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;IUDI.User, IUDI.APIError&gt;) -&gt; () in IUDI.HomeViewController.getUserProfile() -&gt; ()"
+                  moduleName = "IUDI"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/dovanhai/iudi/IUDI/Tab%20Bar/Home%20Screen/HomeViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "304"
+                  endingLineNumber = "304">
+               </Location>
+               <Location
+                  uuid = "D9DBD387-9E35-4CE9-97E8-8CD41B51047C - 4e6cb437e07c5fb6"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;IUDI.User, IUDI.APIError&gt;) -&gt; () in IUDI.HomeViewController.getUserProfile() -&gt; ()"
+                  moduleName = "IUDI"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/dovanhai/iudi/IUDI/Tab%20Bar/Home%20Screen/HomeViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "305"
+                  endingLineNumber = "305">
+               </Location>
+               <Location
+                  uuid = "D9DBD387-9E35-4CE9-97E8-8CD41B51047C - 8034861fe66acc94"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;__C.UIImage&gt;) -&gt; () in closure #1 (Swift.Result&lt;IUDI.User, IUDI.APIError&gt;) -&gt; () in IUDI.HomeViewController.getUserProfile() -&gt; ()"
+                  moduleName = "IUDI"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/dovanhai/iudi/IUDI/Tab%20Bar/Home%20Screen/HomeViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "305"
+                  endingLineNumber = "305">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

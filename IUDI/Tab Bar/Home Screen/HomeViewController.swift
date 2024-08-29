@@ -301,8 +301,19 @@ extension HomeViewController: ServerImageHandle {
                 self.userProfile = userData
                 userCoreData.saveProfileValueToCoreData(userAvatarUrl: userData.avatarLink, userFullname: userData.fullName, userEmail: userData.email
                 )
-                let image = convertStringToImage(imageString: userData.avatarLink ?? "")
-                profileBtn.setImage(image, for: .normal)
+//                let image = convertStringToImage(url: userData.avatarLink ?? "")
+                convertUrlToImage(url: userData.avatarLink ?? "") { image in
+                    DispatchQueue.main.async {
+                        if let image = image {
+                            // Set the image to the UIButton
+                            self.profileBtn.setImage(image, for: .normal)
+                        } else {
+                            // Handle the case where the image could not be loaded
+                            print("Failed to load image.")
+                        }
+                    }
+                }
+                //                profileBtn.setImage(image, for: .normal)
                 profileBtn.contentMode = .scaleAspectFit
                 self.showLoading(isShow: false)
             case .failure(let error):

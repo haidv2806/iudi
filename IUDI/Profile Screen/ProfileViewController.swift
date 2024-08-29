@@ -150,7 +150,18 @@ class ProfileViewController: UIViewController,DateConvertFormat, ServerImageHand
             viewController.loadImage = { [weak self](url, id) in
                 guard let self = self else {return}
                 self.photoID = id
-                self.userAvatar.image = self.convertStringToImage(imageString: url)
+//                self.userAvatar.image = self.convertStringToImage(imageString: url)
+                convertUrlToImage(url: url) { image in
+                    DispatchQueue.main.async {
+                        if let image = image {
+                            // Set the image to the UIButton
+                            self.userAvatar.image = image
+                        } else {
+                            // Handle the case where the image could not be loaded
+                            print("Failed to load image.")
+                        }
+                    }
+                }
                 print("url,id : \(id))")
             }
             self.navigationController?.pushViewController(viewController, animated: true)
