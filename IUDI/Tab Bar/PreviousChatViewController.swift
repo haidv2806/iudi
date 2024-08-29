@@ -25,7 +25,7 @@ class PreviousChatViewController: UIViewController, ServerImageHandle {
         super.viewDidLoad()
         self.tabBarController?.tabBar.isHidden = true
         setupView()
-//        targetAvatar.image = testImage
+        targetAvatar.image = testImage
         getUserProfile()
         
     }
@@ -44,11 +44,20 @@ class PreviousChatViewController: UIViewController, ServerImageHandle {
 //        userAvatar.clipsToBounds = true
 //        userAvatar.transform = CGAffineTransform(rotationAngle: rotationImage(angle: -19))
 //        userHeartImg.transform = CGAffineTransform(rotationAngle: rotationImage(angle: -19))
-        
-//        targetAvatar.frame.size = CGSize(width: 165, height: 165)
+        targetAvatar.translatesAutoresizingMaskIntoConstraints = false
+        NSLayoutConstraint.activate([
+            targetAvatar.widthAnchor.constraint(equalToConstant: 165),
+            targetAvatar.heightAnchor.constraint(equalToConstant: 165)
+        ])
 //        targetAvatar.layer.cornerRadius = targetAvatar.frame.size.width / 2
 //        targetAvatar.contentMode = .scaleAspectFit
 //        targetAvatar.clipsToBounds = true
+//        let resizedImage = targetAvatar.resize(to: CGSize(width: 165, height: 165))
+        
+        // Set the image to the UIImageView
+//        targetAvatar.image = resizedImage
+        targetAvatar.layer.cornerRadius = 165 / 2
+        targetAvatar.clipsToBounds = true
         
         
         // Set the image to the UIImageView
@@ -89,18 +98,6 @@ class PreviousChatViewController: UIViewController, ServerImageHandle {
                 DispatchQueue.main.async {
 //                    self.userAvatar.image = self.convertStringToImage(imageString: avatarUrl)
                     
-//                    self.convertUrlToImage(url: avatarUrl) { image in
-//                        DispatchQueue.main.async {
-//                            if let image = image {
-//                                // Set the image to the UIButton
-//                                self.userAvatar.image = image
-//                            } else {
-//                                // Handle the case where the image could not be loaded
-//                                print("Failed to load image.")
-//                            }
-//                        }
-//                    }
-                    
                     self.convertUrlToImage(url: avatarUrl) { image in
                         DispatchQueue.main.async {
                             if let image = image {
@@ -138,7 +135,6 @@ class PreviousChatViewController: UIViewController, ServerImageHandle {
         // Khởi tạo một instance của struct MessageUserData
         let messageUserData = MessageUserData(
             otherUserAvatar: targetAvatar.image!, // Ảnh đại diện của người dùng khác
-            
             otherUserFullName: dataUser?.fullName ?? "",
             otherUserId: "\(dataUser?.userID ?? 0)", otherLastActivityTime: dataUser?.lastActivityTime ?? "Wed, 27 Mar 2024 11:43:58 GMT"
         )

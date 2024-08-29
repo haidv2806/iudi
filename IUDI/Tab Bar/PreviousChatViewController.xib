@@ -172,7 +172,7 @@
                             <rect key="frame" x="45" y="0.0" width="165" height="165"/>
                         </imageView>
                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="ảnh_nữ" translatesAutoresizingMaskIntoConstraints="NO" id="YHW-WY-Lc3">
-                            <rect key="frame" x="210" y="0.0" width="165" height="165"/>
+                            <rect key="frame" x="222" y="0.0" width="165" height="165"/>
                         </imageView>
                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="Love" translatesAutoresizingMaskIntoConstraints="NO" id="EQh-5M-lWa">
                             <rect key="frame" x="158" y="50" width="114" height="83"/>
@@ -181,7 +181,7 @@
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
                         <constraint firstItem="EQh-5M-lWa" firstAttribute="top" secondItem="5uu-Vr-oZI" secondAttribute="top" constant="50" id="9de-Ud-o1e"/>
-                        <constraint firstItem="YHW-WY-Lc3" firstAttribute="leading" secondItem="EQh-5M-lWa" secondAttribute="trailing" constant="-62" id="Bfz-3f-ges"/>
+                        <constraint firstItem="YHW-WY-Lc3" firstAttribute="leading" secondItem="EQh-5M-lWa" secondAttribute="trailing" constant="-50" id="Bfz-3f-ges"/>
                         <constraint firstItem="cQj-XO-5P8" firstAttribute="top" secondItem="5uu-Vr-oZI" secondAttribute="top" id="T5z-pz-CRF"/>
                         <constraint firstItem="YHW-WY-Lc3" firstAttribute="top" secondItem="5uu-Vr-oZI" secondAttribute="top" id="Tbd-ix-Uni"/>
                         <constraint firstItem="EQh-5M-lWa" firstAttribute="leading" secondItem="5uu-Vr-oZI" secondAttribute="leading" constant="158" id="lkE-qD-ndp"/>

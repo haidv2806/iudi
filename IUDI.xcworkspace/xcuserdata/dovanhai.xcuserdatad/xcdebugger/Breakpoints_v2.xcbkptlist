@@ -194,51 +194,5 @@
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "2709D387-842B-48F2-A30D-7DB062B72A4C"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "IUDI/Tab Bar/Home Screen/UserIntroduceViewController.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "210"
-            endingLineNumber = "210"
-            landmarkName = "setupView()"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "2709D387-842B-48F2-A30D-7DB062B72A4C - 3cf677c3867b51ea"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "IUDI.UserIntroduceViewController.setupView() -&gt; ()"
-                  moduleName = "IUDI"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/dovanhai/iudi/IUDI/Tab%20Bar/Home%20Screen/UserIntroduceViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "210"
-                  endingLineNumber = "210">
-               </Location>
-               <Location
-                  uuid = "2709D387-842B-48F2-A30D-7DB062B72A4C - cd8072dd6212dd92"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Swift.Optional&lt;__C.UIImage&gt;) -&gt; () in IUDI.UserIntroduceViewController.setupView() -&gt; ()"
-                  moduleName = "IUDI"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/dovanhai/iudi/IUDI/Tab%20Bar/Home%20Screen/UserIntroduceViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "210"
-                  endingLineNumber = "210">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
    </Breakpoints>
 </Bucket>
