@@ -233,11 +233,29 @@ extension ProfileViewController {
 //        self.userID = user.userID
         if let url = user.avatarLink{
 //            userAvatar.image = convertStringToImage(imageString: url)
+            
+//            convertUrlToImage(url: url) { image in
+//                DispatchQueue.main.async {
+//                    if let image = image {
+//                        // Set the image to the UIButton
+//                        self.userAvatar.image = image
+//                    } else {
+//                        // Handle the case where the image could not be loaded
+//                        print("Failed to load image.")
+//                    }
+//                }
+//            }
+            
             convertUrlToImage(url: url) { image in
                 DispatchQueue.main.async {
                     if let image = image {
-                        // Set the image to the UIButton
-                        self.userAvatar.image = image
+                        // Resize the image to 140x140 pixels
+                        let resizedImage = image.resize(to: CGSize(width: 120, height: 120))
+                        
+                        // Set the image to the UIImageView
+                        self.userAvatar.image = resizedImage
+                        self.userAvatar.layer.cornerRadius = 120 / 2
+                        self.userAvatar.clipsToBounds = true
                     } else {
                         // Handle the case where the image could not be loaded
                         print("Failed to load image.")
