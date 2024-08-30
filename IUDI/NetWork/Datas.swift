@@ -43,16 +43,25 @@ struct GroupDataPosts: Codable {
 
 // MARK: - ListPost
 struct ListPost: Codable {
-    let avatar, content: String?
+    let avatar: String?
+    let content: String?
+//    let avatar, content: String?
     let favoriteCount: Int?
+    let FavoriteType: Int?
     let firstComment: FirstComment?
     let groupID: Int?
     let ipPosted: String?
     var isFavorited: Bool?
-    let photo: String?
+    let photo: [String]?
     let postID: Int?
-    let postLatitude, postLongitude, postTime, title: String?
-    let updatePostAt, userFullName: String?
+    let postLatitude: String?
+    let postLongitude: String?
+    let postTime: String?
+    let title: String?
+//    let postLatitude, postLongitude, postTime, title: String?
+    let updatePostAt: String?
+    let userFullName: String?
+//    let updatePostAt, userFullName: String?
     let userID: Int?
     let username: String?
 
@@ -60,6 +69,7 @@ struct ListPost: Codable {
         case avatar = "Avatar"
         case content = "Content"
         case favoriteCount = "FavoriteCount"
+        case FavoriteType = "FavoriteType"
         case firstComment = "FirstComment"
         case groupID = "GroupID"
         case ipPosted = "IPPosted"
@@ -79,8 +89,15 @@ struct ListPost: Codable {
 
 // MARK: - FirstComment
 struct FirstComment: Codable {
-    let avatar, content, photo, time: String?
-    let timeUpdated, userFullName, username: String?
+    let avatar : String?
+    let content : String?
+    let photo : String?
+    let time : String?
+    let timeUpdated : String?
+    let userFullName : String?
+    let username : String?
+//    let avatar, content, photo, time: String?
+//    let timeUpdated, userFullName, username: String?
 
     enum CodingKeys: String, CodingKey {
         case avatar = "Avatar"

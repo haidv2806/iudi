@@ -335,8 +335,8 @@ extension CommentsViewController {
             showLoading(isShow: false)
             return
         }
-        let subUrl = "forum/comment/\(postID)/\(userID)"
-        APIService.share.apiHandleGetRequest(subUrl: subUrl, data: CommentsData.self) { [weak self] result in
+        let subUrl = "forum/comment/\(postID)/\(userID)?page=1&limit=50"
+        APIService.share.apiChatHandleGetRequest(subUrl: subUrl, data: CommentsData.self) { [weak self] result in
             guard let self = self else {return}
             switch result {
             case .success(let data):
